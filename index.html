@@ -1,0 +1,285 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: page
+---
+
+<section class="hero">
+  <img
+    class="hero__banner"
+    src="{{ '/img/logo/banner.png' | relative_url }}"
+    alt=""
+    width="2172"
+    height="724"
+  >
+  <div class="hero__content">
+    <img
+      class="hero__logo"
+      src="{{ '/img/logo/logo.png' | relative_url }}"
+      alt="iDEC Cambridge 2026 logo"
+      width="1254"
+      height="1254"
+    >
+    <div class="hero__text">
+      <h1>iDEC Cambridge 2026</h1>
+      <p>
+        We are engineering intrinsically disordered protein tags to improve
+        protein solubility, stability, and function under stress.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Project Overview</h2>
+  <p>
+    Many useful proteins are difficult to express or use because they misfold,
+    aggregate, or lose activity. This creates problems for protein production,
+    storage, and application in biotechnology.
+  </p>
+
+  <p>
+    Our project explores whether intrinsically disordered protein, or IDP, tags
+    can help target proteins remain soluble and functional. We are combining
+    computational design with experimental selection to evolve better tags.
+  </p>
+</section>
+
+<section>
+  <h2>Our Rationale</h2>
+  <p>
+    IDPs are flexible proteins that do not adopt one fixed structure. This
+    flexibility may help them act as solubility tags, protective partners, or
+    stress-tolerance elements.
+  </p>
+
+  <p>
+    Instead of redesigning each difficult protein individually, we want to test
+    whether short transferable tags can improve protein behaviour across
+    different systems.
+  </p>
+</section>
+
+<section>
+  <h2>Project Goals</h2>
+  <ul>
+    <li>Design libraries of candidate IDP tags.</li>
+    <li>Test whether these tags improve target protein performance.</li>
+    <li>Identify sequence features linked to improved solubility or stability.</li>
+    <li>Use selection results to guide the next round of design.</li>
+    <li>Document our workflow so future teams can build on it.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Technical Workflow</h2>
+
+  <p>
+    Our workflow begins with known and de novo IDP-inspired sequences. These are
+    analysed computationally, filtered, converted into DNA libraries, cloned into
+    expression systems, and tested experimentally.
+  </p>
+
+  <!-- Replace this placeholder with a diagram of the full design-build-test-learn cycle -->
+  <figure class="workflow-diagram">
+    <img src="{{ '/img/workflow.png' | relative_url }}"
+         alt="Overview of the design-build-test-learn workflow">
+    <figcaption>
+      Figure 1. Overview of project workflow.
+    </figcaption>
+  </figure>
+
+  <p>
+    A key part of the project is library design. We need enough diversity to find
+    improved tags, but not so much degeneracy that most generated sequences lose
+    useful sequence relationships.
+  </p>
+
+  <!-- Replace this placeholder with a diagram comparing library design strategies -->
+  <figure class="workflow-diagram">
+    <img src="{{ '/assets/images/library-design-placeholder.png' | relative_url }}"
+         alt="Comparison of broad degenerate, reduced-degeneracy, and epPCR libraries">
+    <figcaption>
+      Figure 2. Placeholder for the library design strategy.
+    </figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Experimental Plan</h2>
+  <p>
+    We are developing two main experimental branches. The first uses
+    beta-lactamase as a selectable target protein, where improved tag performance
+    may allow cells to survive higher antibiotic stress.
+  </p>
+
+  <p>
+    The second explores fluorescent or enzymatic readouts, including
+    tardigrade-inspired protection systems and LDH-based activity assays.
+  </p>
+
+  <!-- Replace this placeholder with a diagram of the experimental branches -->
+  <figure class="workflow-diagram">
+    <img src="{{ '/assets/images/experimental-branches-placeholder.png' | relative_url }}"
+         alt="Beta-lactamase and fluorescence or LDH experimental branches">
+    <figcaption>
+      Figure 3. Placeholder for the experimental branches.
+    </figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Why Directed Evolution?</h2>
+  <p>
+    Protein solubility is difficult to predict perfectly from sequence alone.
+    Directed evolution lets us generate variants, test them experimentally, and
+    use the results to improve the next generation of designs.
+  </p>
+</section>
+
+<section>
+  <h2>Current Direction</h2>
+  <p>
+    We are currently refining our library design and experimental workflow. In
+    particular, we are comparing broad degenerate libraries, reduced-degeneracy
+    libraries, and error-prone PCR as possible routes for generating useful tag
+    variants.
+  </p>
+</section>
+
+{% assign latest_post = site.posts.first %}
+{% if latest_post %}
+<section>
+  <h2>Latest Update</h2>
+  <article class="latest-post">
+    <h3>
+      <a href="{{ latest_post.url | relative_url }}">{{ latest_post.title }}</a>
+    </h3>
+    <p class="latest-post__meta">
+      {{ latest_post.date | date: "%-d %B %Y" }}
+    </p>
+    <div>
+      {{ latest_post.excerpt }}
+    </div>
+    <p>
+      <a href="{{ latest_post.url | relative_url }}">Read the full update</a>
+    </p>
+  </article>
+</section>
+{% endif %}
+
+<section>
+  <h2>What to Read Next</h2>
+  <p>
+    Visit the archive for meeting updates, design notes, experimental plans, and
+    longer project write-ups as the wiki grows.
+  </p>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    min-height: 360px;
+    margin: -1rem 0 2rem;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #12384c;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(4, 20, 28, 0.78), rgba(4, 20, 28, 0.38) 55%, rgba(4, 20, 28, 0.12));
+  }
+
+  .hero__banner {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 128px minmax(0, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 2.5rem;
+    color: #fff;
+  }
+
+  .hero__logo {
+    width: 128px;
+    height: 128px;
+    object-fit: contain;
+  }
+
+  .hero__text {
+    max-width: 42rem;
+  }
+
+  .hero h1 {
+    margin: 0 0 0.75rem;
+    color: #fff;
+    font-size: 2.75rem;
+    line-height: 1.05;
+    letter-spacing: 0;
+  }
+
+  .hero p {
+    max-width: 34rem;
+    margin: 0;
+    color: #f3fbff;
+    font-size: 1.1rem;
+  }
+
+  .latest-post {
+    border-left: 4px solid var(--main-color-1);
+    padding-left: 1rem;
+  }
+
+  .latest-post h3 {
+    margin-bottom: 0.25rem;
+  }
+
+  .latest-post__meta {
+    margin-top: 0;
+    color: var(--text-color-l);
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 680px) {
+    .hero {
+      min-height: 420px;
+      margin-top: 0;
+    }
+
+    .hero::after {
+      background: linear-gradient(180deg, rgba(4, 20, 28, 0.76), rgba(4, 20, 28, 0.42));
+    }
+
+    .hero__content {
+      grid-template-columns: 1fr;
+      align-content: end;
+      gap: 1rem;
+      padding: 1.5rem;
+    }
+
+    .hero__logo {
+      width: 96px;
+      height: 96px;
+    }
+
+    .hero h1 {
+      font-size: 2.1rem;
+    }
+  }
+</style>
