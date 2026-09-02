@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "Strengthening the Final Workflow"
 date: 2026-08-28
 categories: project-update

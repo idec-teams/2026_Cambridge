@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "From Troubleshooting to Assembly"
 date: 2026-08-07
 categories: project-update

@@ -23,32 +23,33 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: true
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
-
-      - name: Cache Ruby gems
-        uses: actions/cache@v4
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-
-      - name: Install dependencies
+      - name: Verify Ruby/Jekyll environment
         run: |
-          bundle config set --local path 'vendor/bundle'
-          bundle install --jobs 4 --retry 3
+          ruby --version
+          bundle --version
+          bundle exec jekyll --version
+          bundle info jekyll-text-theme
 
-      - name: Build with Jekyll (Bundler)
-        run: bundle exec jekyll build --source . --destination ./_site
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build \
+            --source . \
+            --destination ./_site \
+            --baseurl "${{ steps.pages.outputs.base_path }}"
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./_site

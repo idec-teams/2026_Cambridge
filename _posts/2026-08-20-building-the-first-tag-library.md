@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "Building the First Tag Library"
 date: 2026-08-20
 categories: project-update

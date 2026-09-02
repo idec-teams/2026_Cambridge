@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "Learning from a Bottleneck"
 date: 2026-07-31
 categories: project-update

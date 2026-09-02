@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "Checking Our Assumptions"
 date: 2026-08-14
 categories: project-update

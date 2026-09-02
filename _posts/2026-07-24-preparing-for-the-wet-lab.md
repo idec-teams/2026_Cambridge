@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "Preparing for the Wet Lab"
 date: 2026-07-24
 categories: project-update
