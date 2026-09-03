@@ -1,5 +1,5 @@
 <section id="comm" class="team-grid" aria-label="Team members">
-  {% for member in site.people %}
+  {% for member in site.team %}
     {% assign member_image = member.pic | default: "Default_pfp.jpg" %}
     <article class="team-member">
       <img
@@ -10,12 +10,11 @@
         loading="lazy"
       >
       <h4>{{ member.name }}</h4>
-      {% if member.role %}
-        <p>{{ member.role }}</p>
-      {% endif %}
+      <p>{{ member.course }}</p>
     </article>
   {% endfor %}
 </section>
+
 
 <style>
   .team-grid {

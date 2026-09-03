@@ -31,24 +31,43 @@ text_skin: default
 highlight_theme: default
 
 # Team names, titles and social links
-people:
+team:
 - name: James
   pic: Default_pfp.jpg
+  course: Year 2 Natural Sciences (Biological)
 
 - name: Yi Feng
   pic: Default_pfp.jpg
+  course: Year 2 Natural Sciences (Biological)
 
 - name: Kean Ann
   pic: Default_pfp.jpg  
+  course: Year 2 Chemical Engineering and Biotechnology
 
 - name: Setareh
   pic: Default_pfp.jpg  
+  course: Year 3 Medicine
 
 - name: Tomn
+  pic: Default_pfp.jpg
+  course: Year 2 Natural Sciences (Biological)
+
+advisors:
+- name: Jarrod
   pic: Default_pfp.jpg
 
 - name: Alanna
   pic: Default_pfp.jpg
+
+- name: Chun Ting
+  pic: Default_pfp.jpg
+
+- name: John
+  pic: Default_pfp.jpg
+
+- name: Amy
+  pic: Default_pfp.jpg
+  
 
 
 author:

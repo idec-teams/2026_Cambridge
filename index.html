@@ -10,31 +10,14 @@ layout: page
     class="hero__banner"
     src="{{ '/img/logo/banner.png' | relative_url }}"
     alt=""
-    width="2172"
-    height="724"
   >
-  <div class="hero__content">
-    <img
-      class="hero__logo"
-      src="{{ '/img/logo/logo.png' | relative_url }}"
-      alt="iDEC Cambridge 2026 logo"
-      width="1254"
-      height="1254"
-    >
-    <div class="hero__text">
-      <h1>iDEC Cambridge 2026</h1>
-      <p>
-        We are engineering intrinsically disordered protein tags to improve
-        protein solubility, stability, and function under stress.
-      </p>
-    </div>
-  </div>
+  
 </section>
 
 <section>
   <h2>Project Overview</h2>
   <p>
-    Many useful proteins are difficult to express or use because they misfold,
+    Many useful recombinant proteins are difficult to express or use because they misfold,
     aggregate, or lose activity. This creates problems for protein production,
     storage, and application in biotechnology.
   </p>
@@ -59,29 +42,37 @@ layout: page
     whether short transferable tags can improve protein behaviour across
     different systems.
   </p>
+
+  <p>
+    IDPs prove an ideal candidate for solubility tags as they are typically small (about 60 amino acids), and thus 
+    often do not significantly interfere with the function of the target protein. Additionally, IDPs are highly soluble and flexible, 
+    which allows them to act as a protective partner for the target protein, preventing aggregation and misfolding. In fact, many natural tags
+    involved in protein solubility and stress tolerance are intrinsically disordered, such as the N-terminal domain of Hsp70 chaperones involved in protein homeostasis
+    in human cells.
+  </p>
 </section>
 
 <section>
   <h2>Project Goals</h2>
   <ul>
-    <li>Design libraries of candidate IDP tags.</li>
-    <li>Test whether these tags improve target protein performance.</li>
+    <li>Design and generate libraries of candidate IDP tags.</li>
+    <li>Test whether these tags improve target protein solubility.</li>
     <li>Identify sequence features linked to improved solubility or stability.</li>
-    <li>Use selection results to guide the next round of design.</li>
-    <li>Document our workflow so future teams can build on it.</li>
+    <li>Validate selected sequences experimentally with wide range of target proteins.</li>
+    <li>Document our workflow for future work by the directed evolution community.</li>
   </ul>
 </section>
 
 <section>
-  <h2>Technical Workflow</h2>
-
+  <h2>Experimental Plan</h2>
   <p>
-    Our workflow begins with known and de novo IDP-inspired sequences. These are
-    analysed computationally, filtered, converted into DNA libraries, cloned into
-    expression systems, and tested experimentally.
+    Our main experimental plan involves computationally generating mutant sequences
+    from a set of IDP templates, and determining mutation hotspots to select the best potential candidates to form IDP libraries.
+    Each mutant sequence was computationally analysed and scored for solubility through traits 
+    such as GRAVY score and solubility fraction.The best candidates were condensed into
+    a single degenerate DNA sequence which we used to procure a mutant library through the Ultramer Oligo serveice from Integrated DNA Technologies (IDT).
   </p>
 
-  <!-- Replace this placeholder with a diagram of the full design-build-test-learn cycle -->
   <figure class="workflow-diagram">
     <img src="{{ '/img/workflow.png' | relative_url }}"
          alt="Overview of the design-build-test-learn workflow">
@@ -91,32 +82,9 @@ layout: page
   </figure>
 
   <p>
-    A key part of the project is library design. We need enough diversity to find
-    improved tags, but not so much degeneracy that most generated sequences lose
-    useful sequence relationships.
-  </p>
-
-  <!-- Replace this placeholder with a diagram comparing library design strategies -->
-  <figure class="workflow-diagram">
-    <img src="{{ '/assets/images/library-design-placeholder.png' | relative_url }}"
-         alt="Comparison of broad degenerate, reduced-degeneracy, and epPCR libraries">
-    <figcaption>
-      Figure 2. Placeholder for the library design strategy.
-    </figcaption>
-  </figure>
-</section>
-
-<section>
-  <h2>Experimental Plan</h2>
-  <p>
-    We are developing two main experimental branches. The first uses
-    beta-lactamase as a selectable target protein, where improved tag performance
-    may allow cells to survive higher antibiotic stress.
-  </p>
-
-  <p>
-    The second explores fluorescent or enzymatic readouts, including
-    tardigrade-inspired protection systems and LDH-based activity assays.
+    To provide a baseline for determining the effectiveness of computationally selecting for mutants, we simultaneously performed error prone PCR on the template sequences
+    to obtain libraries of completely random mutants. All of the libraries generated were cloned into a vector containing an aggregation prone form of b-lactamase for carbenicillin selection.
+    The cells containing the best performing tags could then survive carbenicillin selection, and be subsequently extracted and anaylsed.
   </p>
 
   <!-- Replace this placeholder with a diagram of the experimental branches -->
@@ -132,19 +100,12 @@ layout: page
 <section>
   <h2>Why Directed Evolution?</h2>
   <p>
-    Protein solubility is difficult to predict perfectly from sequence alone.
-    Directed evolution lets us generate variants, test them experimentally, and
-    use the results to improve the next generation of designs.
-  </p>
-</section>
-
-<section>
-  <h2>Current Direction</h2>
-  <p>
-    We are currently refining our library design and experimental workflow. In
-    particular, we are comparing broad degenerate libraries, reduced-degeneracy
-    libraries, and error-prone PCR as possible routes for generating useful tag
-    variants.
+    IDPs do not have fixed conformations and thus their behaviour under physiological
+    conditions are often difficult to predict by rational models. However, their mechanisms
+    in promoting protein solubility have been characterised by prior works, giving us a strong foundation
+    to build upon. We are using directed evolution to explore the sequence space of IDPs and identify
+    the sequence features that are most important for solubility and stability. This will allow us to design better IDP tags for
+    applications in biotechnology and therapeutics.
   </p>
 </section>
 
@@ -172,73 +133,34 @@ layout: page
 <section>
   <h2>What to Read Next</h2>
   <p>
-    Visit the archive for meeting updates, design notes, experimental plans, and
-    longer project write-ups as the wiki grows.
+    Visit the archive for <a href="{{ '/archive/' | relative_url }}">all updates</a> or check out the
+    <a href="{{ '/team/' | relative_url }}">team page</a> to learn more about the people behind the project.
+    Check out the <a href="{{ '/project/' | relative_url }}">project page</a> for more details on our methods and workflow.
   </p>
 </section>
 
 <style>
   .hero {
-    position: relative;
-    display: flex;
-    align-items: stretch;
-    min-height: 360px;
-    margin: -1rem 0 2rem;
+    width: 100vw;
+    margin: -1rem calc(50% - 50vw) 2rem;
     overflow: hidden;
-    border-radius: 8px;
-    background: #12384c;
-  }
-
-  .hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(4, 20, 28, 0.78), rgba(4, 20, 28, 0.38) 55%, rgba(4, 20, 28, 0.12));
   }
 
   .hero__banner {
-    position: absolute;
-    inset: 0;
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
   }
 
-  .hero__content {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 128px minmax(0, 1fr);
-    align-items: center;
-    gap: 1.5rem;
-    width: 100%;
-    padding: 2.5rem;
-    color: #fff;
+  .js-reveal {
+    opacity: 0;
+    transform: translateY(1.5rem);
+    transition: opacity 900ms ease, transform 900ms ease;
   }
 
-  .hero__logo {
-    width: 128px;
-    height: 128px;
-    object-fit: contain;
-  }
-
-  .hero__text {
-    max-width: 42rem;
-  }
-
-  .hero h1 {
-    margin: 0 0 0.75rem;
-    color: #fff;
-    font-size: 2.75rem;
-    line-height: 1.05;
-    letter-spacing: 0;
-  }
-
-  .hero p {
-    max-width: 34rem;
-    margin: 0;
-    color: #f3fbff;
-    font-size: 1.1rem;
+  .js-reveal.is-visible {
+    opacity: 1;
+    transform: none;
   }
 
   .latest-post {
@@ -256,30 +178,41 @@ layout: page
     font-size: 0.95rem;
   }
 
-  @media (max-width: 680px) {
-    .hero {
-      min-height: 420px;
-      margin-top: 0;
-    }
-
-    .hero::after {
-      background: linear-gradient(180deg, rgba(4, 20, 28, 0.76), rgba(4, 20, 28, 0.42));
-    }
-
-    .hero__content {
-      grid-template-columns: 1fr;
-      align-content: end;
-      gap: 1rem;
-      padding: 1.5rem;
-    }
-
-    .hero__logo {
-      width: 96px;
-      height: 96px;
-    }
-
-    .hero h1 {
-      font-size: 2.1rem;
+  @media (prefers-reduced-motion: reduce) {
+    .js-reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
     }
   }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var sections = document.querySelectorAll(".js-article-content > section:not(.hero)");
+
+    if (!("IntersectionObserver" in window)) {
+      sections.forEach(function (section) {
+        section.classList.add("is-visible");
+      });
+      return;
+    }
+
+    sections.forEach(function (section) {
+      section.classList.add("js-reveal");
+    });
+
+    var observer = new IntersectionObserver(function (entries, currentObserver) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          currentObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    sections.forEach(function (section) {
+      observer.observe(section);
+    });
+  });
+</script>

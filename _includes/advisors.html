@@ -1,0 +1,48 @@
+<section id="advisors" class="team-grid" aria-label="Advisors">
+  {% for member in site.advisors %}
+    {% assign member_image = member.pic | default: "Default_pfp.jpg" %}
+    <article class="team-member">
+      <img
+        src="{{ '/img/comm/' | append: member_image | relative_url }}"
+        alt="{{ member.name | default: 'Team member' }}"
+        width="250"
+        height="250"
+        loading="lazy"
+      >
+      <h4>{{ member.name }}</h4>
+      {% if member.role %}
+        <p>{{ member.role }}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</section>
+
+<style>
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  .team-member {
+    text-align: center;
+  }
+
+  .team-member img {
+    width: min(100%, 180px);
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .team-member h4 {
+    margin: 0.75rem 0 0.25rem;
+  }
+
+  .team-member p {
+    margin: 0;
+    color: var(--text-color-l);
+  }
+</style>

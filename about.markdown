@@ -9,4 +9,8 @@ We are a team of 6 students passionate about using biology to create interesting
 
 ### Meet the Team
 
-{% include comm.html %}
+{% include team.html %}
+
+### Our advisors
+
+{% include advisors.html %}

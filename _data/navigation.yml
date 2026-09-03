@@ -5,3 +5,7 @@ header:
     url: /archive.html
   - title: About
     url: /about/
+  - title: Project
+    url: /project/
+  - title: Document
+    url: /document/
