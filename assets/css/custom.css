@@ -1,0 +1,536 @@
+/* Cambridge-inspired visual system
+   Loaded after the TeXt theme so these rules remain upgrade-safe overrides. */
+:root {
+  --cambridge-deep-blue: #082f49;
+  --cambridge-cyan: #22d3ee;
+  --cambridge-dark-teal: #0e7490;
+  --cambridge-pale: #f4f8fb;
+  --cambridge-body: #203040;
+  --cambridge-gold: #c6a15b;
+  --cambridge-white: #ffffff;
+  --cambridge-rule: #d9e5ec;
+  --cambridge-muted: #5b6b78;
+  --cambridge-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --cambridge-sans: Aptos, "Segoe UI", Helvetica, Arial, sans-serif;
+  --cambridge-measure: 72ch;
+  --cambridge-section-space: clamp(3.5rem, 7vw, 6.5rem);
+}
+
+html {
+  background: var(--cambridge-pale);
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  color: var(--cambridge-body);
+  font-family: var(--cambridge-sans);
+}
+
+body {
+  background: var(--cambridge-white);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+::selection {
+  color: var(--cambridge-deep-blue);
+  background: rgb(34 211 238 / 35%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.article__header,
+.item__header,
+.card__header {
+  color: var(--cambridge-deep-blue);
+  font-family: var(--cambridge-serif);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.35rem, 5vw, 4.5rem);
+}
+
+h2 {
+  margin-top: 2.5em;
+  font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+}
+
+h3 {
+  margin-top: 2.1em;
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+}
+
+h4,
+h5,
+h6 {
+  margin-top: 1.8em;
+}
+
+p,
+li,
+dd {
+  line-height: 1.65;
+}
+
+.article__content > p,
+.article__content > ul,
+.article__content > ol,
+.article__content > blockquote,
+.article__content > section > p,
+.article__content > section > ul,
+.article__content > section > ol,
+.article__content > section > blockquote,
+.article__content > .home-page > section > p,
+.article__content > .home-page > section > ul,
+.article__content > .home-page > section > ol {
+  max-width: var(--cambridge-measure);
+}
+
+.article__content p + p,
+.article__content p + ul,
+.article__content p + ol,
+.article__content ul + p,
+.article__content ol + p {
+  margin-top: 1.15rem;
+}
+
+a,
+a:link,
+a:visited {
+  color: var(--cambridge-dark-teal);
+  text-decoration-color: rgb(14 116 144 / 35%);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--cambridge-deep-blue);
+  text-decoration-color: var(--cambridge-cyan);
+}
+
+/* TeXt gives several link components a more specific orange rule. Keep all
+   ordinary content links within the Cambridge palette. */
+.article__content a:not(.button),
+.article__content a:not(.button):link,
+.article__content a:not(.button):visited,
+.item__header,
+.item__header:link,
+.item__header:visited,
+.item__header > a,
+.item__header > a:link,
+.item__header > a:visited,
+.card__header,
+.card__header:link,
+.card__header:visited,
+.card__header > a,
+.card__header > a:link,
+.card__header > a:visited {
+  color: var(--cambridge-dark-teal);
+}
+
+.article__content a:not(.button):hover,
+.article__content a:not(.button):focus,
+.item__header:hover,
+.item__header > a:hover,
+.card__header:hover,
+.card__header > a:hover {
+  color: var(--cambridge-deep-blue);
+  text-decoration-color: var(--cambridge-cyan);
+}
+
+:focus-visible {
+  outline: 3px solid var(--cambridge-cyan);
+  outline-offset: 3px;
+}
+
+/* Header and navigation */
+.header,
+.header.header--dark,
+.header.header--light {
+  position: relative;
+  color: var(--cambridge-white);
+  background: var(--cambridge-deep-blue);
+  box-shadow: 0 8px 24px rgb(8 47 73 / 12%);
+}
+
+.header::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  content: "";
+  background: linear-gradient(90deg, var(--cambridge-cyan), var(--cambridge-gold));
+}
+
+.header a,
+.header .header__brand > a,
+.header .navigation a,
+.header.header--dark a,
+.header.header--light a {
+  color: var(--cambridge-white);
+}
+
+.header .header__brand > a {
+  font-family: var(--cambridge-serif);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.header .header__brand svg {
+  color: var(--cambridge-cyan);
+}
+
+.header .navigation__item > a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+.header .navigation__item::after,
+.header .navigation__item--active::after {
+  display: none;
+  content: none;
+  border: 0;
+}
+
+.header .navigation__item--active > a,
+.header .navigation__item--active > a:link,
+.header .navigation__item--active > a:visited {
+  color: var(--cambridge-cyan);
+}
+
+.header .button,
+.header .button.button--secondary {
+  color: var(--cambridge-white);
+  background: rgb(255 255 255 / 9%);
+  border-color: rgb(255 255 255 / 28%);
+}
+
+/* Main reading surface */
+.page__content {
+  background: var(--cambridge-white);
+}
+
+.article__content {
+  color: var(--cambridge-body);
+  font-size: clamp(1rem, 0.96rem + 0.18vw, 1.1rem);
+}
+
+.article__header h1 {
+  position: relative;
+  padding-bottom: 0.35em;
+}
+
+.article__header h1:empty {
+  display: none;
+}
+
+.article__header h1::after {
+  display: block;
+  width: 3.5rem;
+  height: 4px;
+  margin-top: 0.4em;
+  content: "";
+  background: linear-gradient(90deg, var(--cambridge-dark-teal), var(--cambridge-cyan));
+  border-radius: 999px;
+}
+
+.js-article-content > section,
+.home-page > section {
+  margin-block: var(--cambridge-section-space);
+}
+
+.home-page > section:not(.hero) {
+  padding-block: clamp(2.75rem, 6vw, 5rem);
+}
+
+.home-page > section:not(.hero):nth-child(even) {
+  position: relative;
+  background: var(--cambridge-pale);
+  box-shadow: 0 0 0 100vmax var(--cambridge-pale);
+  clip-path: inset(0 -100vmax);
+}
+
+.home-page > section > h2:first-child {
+  margin-top: 0;
+}
+
+/* Homepage banner */
+.hero {
+  position: relative;
+  width: 100vw;
+  margin: -1rem calc(50% - 50vw) var(--cambridge-section-space);
+  overflow: hidden;
+  background: var(--cambridge-deep-blue);
+  border-bottom: 4px solid var(--cambridge-gold);
+}
+
+.hero::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20%;
+  pointer-events: none;
+  content: "";
+  background: linear-gradient(transparent, rgb(8 47 73 / 18%));
+}
+
+.hero__banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Figures, tables, and supporting content */
+figure,
+.workflow-diagram {
+  margin-block: clamp(2rem, 5vw, 4rem);
+}
+
+.workflow-diagram {
+  padding: clamp(1rem, 3vw, 2rem);
+  background: var(--cambridge-pale);
+  border: 1px solid var(--cambridge-rule);
+  border-radius: 0.8rem;
+}
+
+figure img {
+  border-radius: 0.45rem;
+}
+
+figcaption {
+  max-width: var(--cambridge-measure);
+  margin-top: 0.85rem;
+  color: var(--cambridge-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+blockquote {
+  margin-block: 2rem;
+  padding: 1.25rem 1.5rem;
+  color: var(--cambridge-body);
+  background: var(--cambridge-pale);
+  border-left: 4px solid var(--cambridge-gold);
+  border-radius: 0 0.45rem 0.45rem 0;
+}
+
+table {
+  overflow: hidden;
+  border: 1px solid var(--cambridge-rule);
+  border-radius: 0.5rem;
+}
+
+thead {
+  color: var(--cambridge-white);
+  background: var(--cambridge-deep-blue);
+}
+
+tbody tr:nth-child(even) {
+  background: var(--cambridge-pale);
+}
+
+code {
+  color: var(--cambridge-deep-blue);
+  background: var(--cambridge-pale);
+}
+
+/* Buttons and cards supplied by the theme */
+.button.button--primary,
+.button.button--info,
+.button.button--success {
+  color: var(--cambridge-white);
+  background: var(--cambridge-deep-blue);
+  border-color: var(--cambridge-deep-blue);
+}
+
+.button.button--primary:hover,
+.button.button--info:hover,
+.button.button--success:hover {
+  color: var(--cambridge-deep-blue);
+  background: var(--cambridge-cyan);
+  border-color: var(--cambridge-cyan);
+}
+
+.card {
+  border: 1px solid var(--cambridge-rule);
+  border-radius: 0.7rem;
+  box-shadow: 0 8px 28px rgb(8 47 73 / 7%);
+}
+
+/* Team cards */
+.team-grid {
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+.team-member {
+  padding: 1.25rem;
+  background: var(--cambridge-pale);
+  border: 1px solid var(--cambridge-rule);
+  border-radius: 0.75rem;
+}
+
+.team-member h4 {
+  color: var(--cambridge-deep-blue);
+}
+
+.team-member p {
+  color: var(--cambridge-muted);
+}
+
+/* Footer */
+.footer {
+  color: rgb(255 255 255 / 78%);
+  background: var(--cambridge-deep-blue);
+  border-top: 3px solid var(--cambridge-gold);
+}
+
+.footer a,
+.footer a:link,
+.footer a:visited {
+  color: var(--cambridge-cyan);
+}
+
+/* Progressive section reveal; content remains visible without JavaScript. */
+.js-reveal {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.js-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.latest-post {
+  max-width: var(--cambridge-measure);
+  padding: 1.25rem 1.4rem;
+  background: var(--cambridge-pale);
+  border-left: 4px solid var(--cambridge-gold);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.latest-post h3 {
+  margin: 0 0 0.25rem;
+}
+
+.latest-post__meta {
+  margin-top: 0;
+  color: var(--cambridge-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --cambridge-section-space: 3.5rem;
+  }
+
+  .home-page > section:not(.hero) {
+    padding-block: 2.5rem;
+  }
+
+  .workflow-diagram {
+    padding: 0.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+
+  .js-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Results landing page */
+.results-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-block: 2.5rem 4rem;
+}
+
+.results-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(1.35rem, 3vw, 2rem);
+  background: var(--cambridge-white);
+  border: 1px solid var(--cambridge-rule);
+  border-top: 4px solid var(--cambridge-dark-teal);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 30px rgb(8 47 73 / 7%);
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.results-card:hover {
+  border-top-color: var(--cambridge-cyan);
+  box-shadow: 0 14px 36px rgb(8 47 73 / 12%);
+  transform: translateY(-3px);
+}
+
+.results-card h2 {
+  margin: 0.25rem 0 0.8rem;
+  font-size: clamp(1.65rem, 3vw, 2.2rem);
+}
+
+.results-card p {
+  margin-top: 0;
+}
+
+.results-card > a {
+  margin-top: auto;
+  font-weight: 700;
+}
+
+.results-card__eyebrow {
+  color: var(--cambridge-dark-teal);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.results-card--wide {
+  grid-column: 1 / -1;
+  background: var(--cambridge-pale);
+  border-top-color: var(--cambridge-gold);
+}
+
+@media (max-width: 700px) {
+  .results-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .results-card--wide {
+    grid-column: auto;
+  }
+}

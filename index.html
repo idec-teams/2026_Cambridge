@@ -1,218 +1,207 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: page
+title: ""
+description: "Computational design and experimental selection of intrinsically disordered protein tags: Cambridge iDEC 2026."
 ---
-
-<section class="hero">
-  <img
-    class="hero__banner"
-    src="{{ '/img/logo/banner.png' | relative_url }}"
-    alt=""
-  >
-  
-</section>
-
-<section>
-  <h2>Project Overview</h2>
-  <p>
-    Many useful recombinant proteins are difficult to express or use because they misfold,
-    aggregate, or lose activity. This creates problems for protein production,
-    storage, and application in biotechnology.
-  </p>
-
-  <p>
-    Our project explores whether intrinsically disordered protein, or IDP, tags
-    can help target proteins remain soluble and functional. We are combining
-    computational design with experimental selection to evolve better tags.
-  </p>
-</section>
-
-<section>
-  <h2>Our Rationale</h2>
-  <p>
-    IDPs are flexible proteins that do not adopt one fixed structure. This
-    flexibility may help them act as solubility tags, protective partners, or
-    stress-tolerance elements.
-  </p>
-
-  <p>
-    Instead of redesigning each difficult protein individually, we want to test
-    whether short transferable tags can improve protein behaviour across
-    different systems.
-  </p>
-
-  <p>
-    IDPs prove an ideal candidate for solubility tags as they are typically small (about 60 amino acids), and thus 
-    often do not significantly interfere with the function of the target protein. Additionally, IDPs are highly soluble and flexible, 
-    which allows them to act as a protective partner for the target protein, preventing aggregation and misfolding. In fact, many natural tags
-    involved in protein solubility and stress tolerance are intrinsically disordered, such as the N-terminal domain of Hsp70 chaperones involved in protein homeostasis
-    in human cells.
-  </p>
-</section>
-
-<section>
-  <h2>Project Goals</h2>
-  <ul>
-    <li>Design and generate libraries of candidate IDP tags.</li>
-    <li>Test whether these tags improve target protein solubility.</li>
-    <li>Identify sequence features linked to improved solubility or stability.</li>
-    <li>Validate selected sequences experimentally with wide range of target proteins.</li>
-    <li>Document our workflow for future work by the directed evolution community.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Experimental Plan</h2>
-  <p>
-    Our main experimental plan involves computationally generating mutant sequences
-    from a set of IDP templates, and determining mutation hotspots to select the best potential candidates to form IDP libraries.
-    Each mutant sequence was computationally analysed and scored for solubility through traits 
-    such as GRAVY score and solubility fraction.The best candidates were condensed into
-    a single degenerate DNA sequence which we used to procure a mutant library through the Ultramer Oligo serveice from Integrated DNA Technologies (IDT).
-  </p>
-
-  <figure class="workflow-diagram">
-    <img src="{{ '/img/workflow.png' | relative_url }}"
-         alt="Overview of the design-build-test-learn workflow">
-    <figcaption>
-      Figure 1. Overview of project workflow.
-    </figcaption>
-  </figure>
-
-  <p>
-    To provide a baseline for determining the effectiveness of computationally selecting for mutants, we simultaneously performed error prone PCR on the template sequences
-    to obtain libraries of completely random mutants. All of the libraries generated were cloned into a vector containing an aggregation prone form of b-lactamase for carbenicillin selection.
-    The cells containing the best performing tags could then survive carbenicillin selection, and be subsequently extracted and anaylsed.
-  </p>
-
-  <!-- Replace this placeholder with a diagram of the experimental branches -->
-  <figure class="workflow-diagram">
-    <img src="{{ '/assets/images/experimental-branches-placeholder.png' | relative_url }}"
-         alt="Beta-lactamase and fluorescence or LDH experimental branches">
-    <figcaption>
-      Figure 3. Placeholder for the experimental branches.
-    </figcaption>
-  </figure>
-</section>
-
-<section>
-  <h2>Why Directed Evolution?</h2>
-  <p>
-    IDPs do not have fixed conformations and thus their behaviour under physiological
-    conditions are often difficult to predict by rational models. However, their mechanisms
-    in promoting protein solubility have been characterised by prior works, giving us a strong foundation
-    to build upon. We are using directed evolution to explore the sequence space of IDPs and identify
-    the sequence features that are most important for solubility and stability. This will allow us to design better IDP tags for
-    applications in biotechnology and therapeutics.
-  </p>
-</section>
-
-{% assign latest_post = site.posts.first %}
-{% if latest_post %}
-<section>
-  <h2>Latest Update</h2>
-  <article class="latest-post">
-    <h3>
-      <a href="{{ latest_post.url | relative_url }}">{{ latest_post.title }}</a>
-    </h3>
-    <p class="latest-post__meta">
-      {{ latest_post.date | date: "%-d %B %Y" }}
-    </p>
-    <div>
-      {{ latest_post.excerpt }}
+<!-- Homepage component rules are scoped to .idec-home; its palette and
+     typography use the shared site-wide design tokens. -->
+<div class="idec-home">
+  <section class="ih-hero" aria-labelledby="ih-title">
+    <p class="ih-eyebrow">Cambridge · iDEC 2026</p>
+    <h1 id="ih-title">Flexible proteins.<br><span>New possibilities.</span></h1>
+    <p class="ih-lead">Exploring disordered protein tags through computational design and experimental selection.</p>
+    <p class="ih-intro">Can a flexible protein tag help an enzyme remain functional—or help a cell withstand freezing? We explored these questions by designing sequence libraries, applying selection and tracking which variants became enriched.</p>
+    <div class="ih-actions">
+      <a class="ih-button ih-button--primary" href="#ih-story">Follow the project <span aria-hidden="true">↓</span></a>
+      <a class="ih-button ih-button--secondary" href="{% link project/report.md %}">Read our report <span aria-hidden="true">↗</span></a>
     </div>
-    <p>
-      <a href="{{ latest_post.url | relative_url }}">Read the full update</a>
-    </p>
-  </article>
-</section>
-{% endif %}
+    <figure class="ih-banner">
+      <img src="{{ '/img/logo/banner.png' | relative_url }}" alt="Cambridge iDEC 2026: Darwin, Cambridge architecture and an evolution-inspired protein illustration" fetchpriority="high">
+    </figure>
+    <div class="ih-facts" aria-label="Project at a glance">
+      <div><strong>4 design branches</strong><span>NEXT · SSB · De novo · CAHS1</span></div>
+      <div><strong>2 selection strategies</strong><span>Antibiotic exposure · Freeze–thaw</span></div>
+      <div><strong>1 shared approach</strong><span>Design · Build · Select · Analyse</span></div>
+    </div>
+  </section>
 
-<section>
-  <h2>What to Read Next</h2>
-  <p>
-    Visit the archive for <a href="{{ '/archive/' | relative_url }}">all updates</a> or check out the
-    <a href="{{ '/team/' | relative_url }}">team page</a> to learn more about the people behind the project.
-    Check out the <a href="{{ '/project/' | relative_url }}">project page</a> for more details on our methods and workflow.
-  </p>
-</section>
+  <section class="ih-section" id="ih-story" aria-labelledby="ih-problem-title">
+    <div class="ih-section-heading"><p class="ih-eyebrow">01 / The problem</p><h2 id="ih-problem-title">Producing a protein is only the beginning.</h2></div>
+    <div class="ih-split">
+      <div><p>Recombinant proteins are valuable tools for research and biotechnology, but expression does not guarantee a useful product. Proteins can aggregate, become insoluble or lose activity. Finding conditions that preserve their function can require substantial optimisation.</p><p>Fusion tags offer one possible route. Our project asks whether intrinsically disordered proteins and protein regions can provide useful starting points for developing tags that support protein function or cellular stress tolerance.</p></div>
+      <aside class="ih-callout"><p class="ih-eyebrow">Our central question</p><p>Which sequence features are associated with enrichment when disordered protein variants are put under selection?</p></aside>
+    </div>
+  </section>
+
+  <section class="ih-section ih-section--tint" aria-labelledby="ih-design-title">
+    <div class="ih-section-heading"><p class="ih-eyebrow">02 / The design</p><h2 id="ih-design-title">Start with flexibility. Explore the sequence.</h2></div>
+    <p class="ih-copy">Intrinsically disordered proteins do not adopt a single stable three-dimensional structure under the conditions in which they are disordered. Their flexibility and sequence composition make them candidates for several protective roles. For solubility tags, one proposed mechanism is an “entropic bristle”: a mobile peptide that can hinder aggregation-promoting contacts around its fusion partner.</p>
+    <p class="ih-copy">We combined natural templates with a motif-based de novo design. Computational tools generated amino acid variants and filtered them using descriptors such as hydrophobicity, estimated charge and secondary-structure propensity. Degenerate DNA encoding provided a practical way to synthesise libraries, while also introducing combinations beyond the original filtered catalogue.</p>
+    <p class="ih-small">These descriptors guide library design; they are not direct measurements of solubility or protection.</p>
+
+    <div class="ih-tag-grid" aria-label="The four tag design branches">
+      <article class="ih-tag"><span class="ih-tag-number">01</span><p class="ih-eyebrow">Natural peptide extension</p><h3>NEXT</h3><p>A 52-residue construct derived from the N-terminal extension of a bacterial carbonic anhydrase. We explored variants of this solubility-tag template through β-lactamase selection.</p><a href="{% link project/next.md %}">Explore the NEXT design <span aria-hidden="true">→</span></a></article>
+      <article class="ih-tag"><span class="ih-tag-number">02</span><p class="ih-eyebrow">Disordered bacterial tail</p><h3>SSB</h3><p>A 42-residue C-terminal fragment of <em>E. coli</em> single-stranded DNA-binding protein. We used its flexible tail as a starting point for a fusion-tag library.</p><a href="{% link project/ssb.md %}">Explore the SSB design <span aria-hidden="true">→</span></a></article>
+      <article class="ih-tag"><span class="ih-tag-number">03</span><p class="ih-eyebrow">Motif-based sequence design</p><h3>De novo</h3><p>New candidate sequences assembled from charged, polar and proline-containing motifs. A culture identity mix-up prevented experimental conclusions about this branch.</p><a href="{% link project/de-novo.md %}">Explore the de novo design <span aria-hidden="true">→</span></a></article>
+      <article class="ih-tag"><span class="ih-tag-number">04</span><p class="ih-eyebrow">Tardigrade-inspired protection</p><h3>CAHS1</h3><p>A separate branch focused on cellular freeze–thaw tolerance. We generated CAHS1-derived variants and examined their representation across selection rounds.</p><a href="{% link project/cahs.md %}">Explore the CAHS1 design <span aria-hidden="true">→</span></a></article>
+    </div>
+  </section>
+
+  <section class="ih-section" aria-labelledby="ih-selection-title">
+    <div class="ih-section-heading"><p class="ih-eyebrow">03 / The selection</p><h2 id="ih-selection-title">Two experiments. Two different challenges.</h2></div>
+    <div class="ih-branch-grid">
+      <article class="ih-branch"><span class="ih-pill">NEXT + SSB</span><h3>Function under antibiotic exposure</h3><p>Candidate tags were fused to aggregation-prone L76N TEM-1 β-lactamase, an enzyme that can provide resistance to carbenicillin. We monitored culture turbidity and compared sequence representation in cultures grown with and without carbenicillin.</p><p>The aim was to enrich variants associated with function in this system. Growth and sequencing provide an indirect selection readout; they do not by themselves measure soluble enzyme yield.</p></article>
+      <article class="ih-branch"><span class="ih-pill">CAHS1</span><h3>Recovery after freeze–thaw stress</h3><p>Cells expressing CAHS1-derived variants underwent freeze–thaw selection. Viable-cell recovery and sequencing were used to investigate survival and changes in library composition across rounds.</p><p>A preliminary comparison of the original CAHS1 sequence with empty pBAD provided evidence that the system could distinguish different survival outcomes.</p></article>
+    </div>
+    <figure class="ih-workflow">
+      <svg viewBox="0 0 760 160" role="img" aria-labelledby="ih-svg-title ih-svg-desc">
+        <title id="ih-svg-title">From sequence design to candidate identification</title>
+        <desc id="ih-svg-desc">Four stages: computational design, library construction, experimental selection, and sequencing analysis. A connecting line draws as the diagram enters view.</desc>
+        <path class="ih-flow-track" d="M95 58 H665"/>
+        <path class="ih-flow-line" pathLength="1" d="M95 58 H665"/>
+        <g class="ih-flow-node"><circle cx="95" cy="58" r="25"/><text x="95" y="65">1</text></g>
+        <g class="ih-flow-node"><circle cx="285" cy="58" r="25"/><text x="285" y="65">2</text></g>
+        <g class="ih-flow-node"><circle cx="475" cy="58" r="25"/><text x="475" y="65">3</text></g>
+        <g class="ih-flow-node"><circle cx="665" cy="58" r="25"/><text x="665" y="65">4</text></g>
+        <g class="ih-flow-label"><text x="95" y="112">Design</text><text x="285" y="112">Build</text><text x="475" y="112">Select</text><text x="665" y="112">Analyse</text></g>
+      </svg>
+      <figcaption>Sequence design and experimental selection generate candidates for subsequent individual validation.</figcaption>
+    </figure>
+    <a class="ih-text-link" href="{% link project/index.md %}">Read the experimental design <span aria-hidden="true">→</span></a>
+  </section>
+
+  <section class="ih-section ih-section--dark" aria-labelledby="ih-results-title">
+    <div class="ih-section-heading"><p class="ih-eyebrow">04 / The evidence</p><h2 id="ih-results-title">Selection changed which sequences were represented.</h2></div>
+    <p class="ih-copy">We addressed two questions: did the overall sequence composition change, and which groups of similar sequences became more or less abundant?</p>
+    <div class="ih-analysis-grid">
+      <article><h3>Compare composition</h3><p>We compared amino acid variant counts using Pearson’s χ² statistic, with fixed-margin Monte Carlo simulations to assess the discrepancy under an equal-composition model when expected counts were sparse.</p></article>
+      <article><h3>Explore sequence properties</h3><p>Within each library, we clustered the pooled untreated and selected sequences once, using a shared set of scaled descriptors. PCA provided a two-dimensional view, while read counts measured the abundance of each fixed property group.</p></article>
+    </div>
+    <div class="ih-results-grid">
+      <article><p class="ih-eyebrow">NEXT</p><h3>A property group became enriched</h3><p>The C2 group increased from <strong>6.1% to 29.6%</strong> of reads. NEXT-072 was prioritised as an individual candidate based on its increase in relative representation.</p></article>
+      <article><p class="ih-eyebrow">SSB</p><h3>One variant dominated the selected sample</h3><p>SSB-054 accounted for <strong>72.6%</strong> of selected reads. Its dominance strongly influenced the read-weighted property summaries.</p></article>
+      <article><p class="ih-eyebrow">CAHS1</p><h3>Sequence change and survival evidence</h3><p>Library sequencing showed changes across selection rounds. In a separate preliminary deep-freeze comparison, cells expressing original CAHS1 survived better than the empty-vector control.</p></article>
+    </div>
+    <p class="ih-limit">These are exploratory findings from single biological replicates. Enrichment identifies candidates for follow-up; it does not establish reproducible improvement in protein solubility or isolate the mechanism responsible.</p>
+    <a class="ih-button ih-button--light" href="{% link results/index.md %}">Explore the results <span aria-hidden="true">→</span></a>
+  </section>
+
+  <section class="ih-section" aria-labelledby="ih-next-title">
+    <div class="ih-section-heading"><p class="ih-eyebrow">05 / What comes next</p><h2 id="ih-next-title">From enriched candidates to tested functions.</h2></div>
+    <p class="ih-copy">The next step is to reconstruct prioritised variants and test them individually alongside parental sequences and appropriate controls. Replicated assays of soluble protein yield, enzyme activity or freeze–thaw survival would help establish whether enrichment corresponds to the intended phenotype. Testing additional fusion partners would then address how transferable a useful tag might be.</p>
+    <p class="ih-copy">Our contribution is a documented workflow linking computational library design, experimental selection and sequence-level analysis—and a set of candidates and questions for future work.</p>
+    <div class="ih-resource-grid">
+      <a href="{% link archive/index.md %}"><strong>Archives</strong><span>Follow the weekly record of decisions and experiments.</span><b aria-hidden="true">↗</b></a>
+      <a href="{% link about/index.md %}"><strong>About</strong><span>Meet the team and the people who supported the project.</span><b aria-hidden="true">↗</b></a>
+      <a href="{% link project/index.md %}"><strong>Project</strong><span>Explore the rationale, experimental design and supporting methods.</span><b aria-hidden="true">↗</b></a>
+      <a href="{% link results/index.md %}"><strong>Results</strong><span>Read the findings for all four tag branches and our additional discussion.</span><b aria-hidden="true">↗</b></a>
+      <a href="{% link document/index.md %}"><strong>Documents</strong><span>Browse the supporting documentation.</span><b aria-hidden="true">↗</b></a>
+    </div>
+  </section>
+</div>
 
 <style>
-  .hero {
-    width: 100vw;
-    margin: -1rem calc(50% - 50vw) 2rem;
-    overflow: hidden;
-  }
-
-  .hero__banner {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .js-reveal {
-    opacity: 0;
-    transform: translateY(1.5rem);
-    transition: opacity 900ms ease, transform 900ms ease;
-  }
-
-  .js-reveal.is-visible {
-    opacity: 1;
-    transform: none;
-  }
-
-  .latest-post {
-    border-left: 4px solid var(--main-color-1);
-    padding-left: 1rem;
-  }
-
-  .latest-post h3 {
-    margin-bottom: 0.25rem;
-  }
-
-  .latest-post__meta {
-    margin-top: 0;
-    color: var(--text-color-l);
-    font-size: 0.95rem;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .js-reveal {
-      opacity: 1;
-      transform: none;
-      transition: none;
-    }
-  }
+/* Local tokens avoid changing the existing theme or other pages. */
+.idec-home { --ih-blue:var(--cambridge-deep-blue); --ih-cyan:var(--cambridge-cyan); --ih-teal:var(--cambridge-dark-teal); --ih-ink:var(--cambridge-body); --ih-muted:var(--cambridge-muted); --ih-pale:var(--cambridge-pale); --ih-line:var(--cambridge-rule); color:var(--ih-ink); font-family:var(--cambridge-sans); line-height:1.7; }
+.idec-home *, .idec-home *::before, .idec-home *::after { box-sizing:border-box; }
+.idec-home h1, .idec-home h2, .idec-home h3 { color:var(--ih-blue); line-height:1.15; letter-spacing:-.025em; margin-top:0; }
+.idec-home h1, .idec-home h2 { font-family:var(--cambridge-serif); }
+.idec-home h1 { font-size:clamp(2.8rem,6.5vw,5rem); margin-bottom:1.25rem; }
+.idec-home h1 span { color:var(--ih-teal); }
+.idec-home h2 { font-size:clamp(2rem,4vw,3rem); max-width:23ch; margin-bottom:1.5rem; }
+.idec-home h3 { font-size:1.35rem; margin-bottom:.8rem; }
+.idec-home p { margin:0 0 1.1rem; }
+.idec-home a { color:var(--ih-teal); text-decoration:none; }
+.idec-home a:hover { text-decoration:underline; }
+.idec-home a:focus-visible { outline:3px solid var(--ih-teal); outline-offset:5px; }
+.idec-home img { display:block; width:100%; height:auto; max-width:100%; }
+.idec-home figure { margin:0; }
+.idec-home .ih-eyebrow { font:700 .73rem/1.5 system-ui,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:var(--ih-teal); margin-bottom:.8rem; }
+.ih-hero { padding:clamp(1.5rem,5vw,4rem) 0 0; }
+.idec-home .ih-lead { max-width:42ch; font-size:clamp(1.15rem,2.5vw,1.5rem); line-height:1.5; }
+.ih-intro, .ih-copy { max-width:70ch; }
+.ih-actions { display:flex; flex-wrap:wrap; gap:.8rem; margin:1.8rem 0 2.5rem; }
+.idec-home .ih-button { display:inline-flex; align-items:center; justify-content:center; gap:1rem; padding:.8rem 1.2rem; border:1px solid var(--ih-blue); border-radius:6px; font-weight:650; line-height:1.4; transition:background .2s,transform .2s; }
+.idec-home .ih-button:hover { text-decoration:none; transform:translateY(-2px); }
+.idec-home .ih-button--primary { background:var(--ih-blue); color:white; }
+.idec-home .ih-button--primary:hover { background:#10506d; }
+.idec-home .ih-button--secondary { color:var(--ih-blue); }
+.ih-banner { overflow:hidden; border:1px solid var(--ih-line); border-radius:10px; background:white; }
+.ih-facts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.5rem; padding:1.8rem 0; border-bottom:1px solid var(--ih-line); }
+.ih-facts strong, .ih-facts span { display:block; }
+.ih-facts strong { font-size:.95rem; color:var(--ih-blue); }
+.ih-facts span { font-size:.8rem; color:var(--ih-muted); }
+.ih-section { padding:clamp(2.5rem,6vw,4.5rem) 0; scroll-margin-top:6rem; }
+.ih-section--tint, .ih-section--dark { padding:clamp(1.5rem,4vw,3rem); border-radius:12px; margin:1rem 0; }
+.ih-section--tint { background:var(--ih-pale); }
+.ih-split { display:grid; grid-template-columns:minmax(0,1.6fr) minmax(0,1fr); gap:2rem; align-items:start; }
+.ih-callout { background:var(--ih-pale); padding:1.5rem; border-left:3px solid var(--ih-teal); }
+.idec-home .ih-callout p:last-child { font:1.35rem/1.5 var(--cambridge-serif); color:var(--ih-blue); margin:0; }
+.ih-small { font-size:.88rem; color:var(--ih-muted); }
+.ih-tag-grid, .ih-branch-grid, .ih-analysis-grid, .ih-resource-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.2rem; }
+.ih-tag-grid { margin-top:2rem; }
+.ih-tag { position:relative; display:flex; flex-direction:column; background:white; border:1px solid var(--ih-line); border-radius:8px; padding:1.6rem; transition:border-color .2s,transform .2s; }
+.ih-tag:hover { border-color:var(--ih-teal); transform:translateY(-3px); }
+.idec-home .ih-tag .ih-eyebrow { padding-right:2rem; font-size:.66rem; }
+.idec-home .ih-tag h3 { font:700 2rem/1.2 var(--cambridge-serif); }
+.ih-tag-number { position:absolute; right:1.4rem; top:1.4rem; color:var(--ih-muted); font-size:.8rem; }
+.ih-tag p, .ih-branch p { font-size:.94rem; }
+.ih-tag a { margin-top:auto; font-weight:650; }
+.ih-branch { padding:1.6rem; border:1px solid var(--ih-line); border-top:3px solid var(--ih-teal); border-radius:8px; }
+.ih-pill { display:inline-block; padding:.2rem .65rem; margin-bottom:1rem; background:#e5f4f7; color:var(--ih-blue); border-radius:20px; font-size:.75rem; font-weight:700; }
+.idec-home .ih-workflow { margin:2rem 0 1rem; }
+.ih-workflow svg { display:block; width:100%; height:auto; }
+.ih-flow-track { fill:none; stroke:var(--ih-line); stroke-width:3; }
+.ih-flow-line { fill:none; stroke:var(--ih-teal); stroke-width:3; }
+.ih-flow-node circle { fill:var(--ih-blue); }
+.ih-flow-node text { fill:white; text-anchor:middle; font:700 20px system-ui,sans-serif; }
+.ih-flow-label text { fill:var(--ih-blue); text-anchor:middle; font:600 17px system-ui,sans-serif; }
+.idec-home figcaption { text-align:center; color:var(--ih-muted); font-size:.8rem; margin:.3rem 0 1rem; }
+.ih-text-link { font-weight:650; }
+.ih-section--dark { background:var(--ih-blue); color:#e5edf3; }
+.idec-home .ih-section--dark h2, .idec-home .ih-section--dark h3 { color:white; }
+.idec-home .ih-section--dark .ih-eyebrow { color:var(--ih-cyan); }
+.ih-analysis-grid { margin:2rem 0; }
+.ih-analysis-grid article { padding-bottom:1rem; border-bottom:1px solid #3b586c; }
+.ih-results-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.5rem; margin:2rem 0; }
+.ih-results-grid h3 { font-size:1.15rem; }
+.ih-results-grid p { font-size:.9rem; }
+.ih-limit { font-size:.88rem; border-left:2px solid var(--ih-cyan); padding-left:1rem; }
+.idec-home .ih-button--light { background:white; color:var(--ih-blue); border-color:white; margin-top:1rem; }
+.ih-resource-grid { margin-top:2rem; }
+.idec-home .ih-resource-grid a { position:relative; display:block; padding:1.25rem 3rem 1.25rem 1.25rem; border:1px solid var(--ih-line); border-radius:8px; color:var(--ih-blue); }
+.ih-resource-grid strong, .ih-resource-grid span { display:block; }
+.ih-resource-grid span { font-size:.88rem; color:var(--ih-muted); margin-top:.4rem; }
+.ih-resource-grid b { position:absolute; right:1.2rem; top:1.2rem; }
+/* Suppress only an empty theme heading on this homepage, not other page titles. */
+body:has(.idec-home) .article__header:has(h1:empty) { display:none; }
+/* Content stays visible. JavaScript adds animation only after observer setup. */
+@keyframes ih-arrive { from { opacity:.45; transform:translateY(12px); } to { opacity:1; transform:none; } }
+.ih-animate-in { animation:ih-arrive .45s ease both; }
+.ih-draw-in .ih-flow-line { animation:ih-draw 1.2s ease both; }
+@keyframes ih-draw { from { stroke-dasharray:1; stroke-dashoffset:1; } to { stroke-dasharray:1; stroke-dashoffset:0; } }
+@media (max-width:700px) { .ih-split, .ih-branch-grid, .ih-results-grid, .ih-analysis-grid { grid-template-columns:1fr; } .ih-facts { grid-template-columns:1fr; gap:1rem; } .ih-section--tint, .ih-section--dark { padding:1.5rem; } }
+@media (max-width:500px) { .ih-tag-grid, .ih-resource-grid { grid-template-columns:1fr; } .ih-actions .ih-button { width:100%; } .ih-flow-label text { font-size:20px; } }
+@media (prefers-reduced-motion:reduce) { .idec-home *, .idec-home *::before, .idec-home *::after { animation:none !important; transition:none !important; } }
 </style>
-
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var sections = document.querySelectorAll(".js-article-content > section:not(.hero)");
-
-    if (!("IntersectionObserver" in window)) {
-      sections.forEach(function (section) {
-        section.classList.add("is-visible");
-      });
-      return;
-    }
-
-    sections.forEach(function (section) {
-      section.classList.add("js-reveal");
-    });
-
-    var observer = new IntersectionObserver(function (entries, currentObserver) {
+(function () {
+  function initialiseHomepage() {
+    var root = document.querySelector('.idec-home');
+    if (!root || !('IntersectionObserver' in window) ||
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          currentObserver.unobserve(entry.target);
-        }
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add(entry.target.matches('.ih-workflow') ? 'ih-draw-in' : 'ih-animate-in');
+        observer.unobserve(entry.target);
       });
-    }, { threshold: 0.12 });
-
-    sections.forEach(function (section) {
-      observer.observe(section);
+    }, { threshold: 0.08 });
+    root.querySelectorAll('.ih-section-heading, .ih-tag, .ih-workflow').forEach(function (item) {
+      observer.observe(item);
     });
-  });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialiseHomepage);
+  else initialiseHomepage();
+}());
 </script>

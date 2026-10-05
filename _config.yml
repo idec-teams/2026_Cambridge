@@ -67,6 +67,9 @@ advisors:
 
 - name: Amy
   pic: Default_pfp.jpg
+
+- name: Alexander
+  pic: Default_pfp.jpg
   
 
 

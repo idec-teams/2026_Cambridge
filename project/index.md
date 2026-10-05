@@ -6,8 +6,12 @@ permalink: /project/
 
 This section contains the scientific story of our project.
 
-- [Background]({{ '/project/background/' | relative_url }})
-- [Design]({{ '/project/design/' | relative_url }})
-- [Results]({{ '/project/results/' | relative_url }})
-- [Report]({{ '/project/report/' | relative_url }})
-- [Supplementary Information]({{ '/project/supplementary-information/' | relative_url }})
+Learn about the rationale behind the project, how we designed our libraries, and the experimental methods used to test them.
+
+- Read about the [experimental design]({% link project/design.md %}) and the rationale behind our methodology.
+
+- Explore [additional methods]({% link project/additional-methods.md %}), including approaches that did not make the final report and troubleshooting when experiments did not proceed as planned.
+
+- See the separate [Results page]({% link results/index.md %}) for the four tag branches and additional discussion.
+
+- Read our official iDEC [report]({% link project/report.md %}).
