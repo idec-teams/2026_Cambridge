@@ -393,6 +393,34 @@ code {
   color: var(--cambridge-muted);
 }
 
+/* Sponsor logos use their natural aspect ratios rather than the circular
+   portrait treatment used by team and advisor cards. */
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.sponsor-card {
+  display: grid;
+  min-height: 10rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  place-items: center;
+  background: var(--cambridge-white);
+  border: 1px solid var(--cambridge-rule);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 28px rgb(8 47 73 / 7%);
+}
+
+.sponsor-logo {
+  display: block;
+  width: 100%;
+  max-width: 22rem;
+  height: 7rem;
+  object-fit: contain;
+}
+
 /* Footer */
 .footer {
   color: rgb(255 255 255 / 78%);
@@ -532,5 +560,261 @@ code {
 
   .results-card--wide {
     grid-column: auto;
+  }
+}
+
+/* Project and document landing pages */
+.section-landing {
+  color: var(--cambridge-body);
+}
+
+.section-landing *,
+.section-landing *::before,
+.section-landing *::after {
+  box-sizing: border-box;
+}
+
+.sl-hero {
+  padding: clamp(2.5rem, 7vw, 5.5rem) 0 clamp(2.5rem, 6vw, 4.5rem);
+  border-bottom: 1px solid var(--cambridge-rule);
+}
+
+.sl-eyebrow,
+.sl-card__eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--cambridge-dark-teal);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.section-landing .sl-hero h1 {
+  max-width: 15ch;
+  margin: 0 0 1.25rem;
+  color: var(--cambridge-deep-blue);
+  font-family: var(--cambridge-serif);
+  font-size: clamp(2.75rem, 6.5vw, 5rem);
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+
+.sl-lead {
+  max-width: 58ch;
+  margin: 0;
+  color: var(--cambridge-body);
+  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+  line-height: 1.55;
+}
+
+.sl-note {
+  max-width: 60ch;
+  margin: 1.25rem 0 0;
+  padding-left: 1rem;
+  color: var(--cambridge-muted);
+  font-size: 0.9rem;
+  border-left: 3px solid var(--cambridge-gold);
+}
+
+.sl-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.section-landing .sl-button,
+.section-landing .sl-button:link,
+.section-landing .sl-button:visited {
+  display: inline-flex;
+  gap: 0.9rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  border: 1px solid var(--cambridge-deep-blue);
+  border-radius: 0.4rem;
+  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.section-landing .sl-button:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.section-landing .sl-button--primary,
+.section-landing .sl-button--primary:link,
+.section-landing .sl-button--primary:visited {
+  color: var(--cambridge-white);
+  background: var(--cambridge-deep-blue);
+}
+
+.section-landing .sl-button--primary:hover {
+  color: var(--cambridge-deep-blue);
+  background: var(--cambridge-cyan);
+  border-color: var(--cambridge-cyan);
+}
+
+.section-landing .sl-button--secondary,
+.section-landing .sl-button--secondary:link,
+.section-landing .sl-button--secondary:visited {
+  color: var(--cambridge-deep-blue);
+  background: transparent;
+}
+
+.section-landing .sl-button--secondary:hover {
+  background: var(--cambridge-pale);
+}
+
+.sl-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: clamp(2.5rem, 6vw, 4.5rem);
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--cambridge-rule);
+}
+
+.sl-facts strong,
+.sl-facts span {
+  display: block;
+}
+
+.sl-facts strong {
+  color: var(--cambridge-deep-blue);
+  font-family: var(--cambridge-serif);
+  font-size: 1.15rem;
+}
+
+.sl-facts span {
+  margin-top: 0.25rem;
+  color: var(--cambridge-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.sl-section,
+.sl-process {
+  padding: clamp(3rem, 7vw, 5.5rem) 0;
+}
+
+.sl-section-heading h2 {
+  max-width: 20ch;
+  margin: 0 0 2rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.sl-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.sl-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(1.4rem, 3vw, 2rem);
+  background: var(--cambridge-white);
+  border: 1px solid var(--cambridge-rule);
+  border-top: 4px solid var(--cambridge-dark-teal);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 30px rgb(8 47 73 / 7%);
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.sl-card:hover {
+  border-top-color: var(--cambridge-cyan);
+  box-shadow: 0 14px 36px rgb(8 47 73 / 12%);
+  transform: translateY(-3px);
+}
+
+.section-landing .sl-card h2 {
+  margin: 0.2rem 0 0.75rem;
+  font-size: clamp(1.55rem, 3vw, 2.1rem);
+}
+
+.sl-card p:not(.sl-card__eyebrow) {
+  margin: 0 0 1.4rem;
+  color: var(--cambridge-muted);
+}
+
+.section-landing .sl-card > a {
+  margin-top: auto;
+  font-weight: 700;
+}
+
+.sl-card--report {
+  background: var(--cambridge-pale);
+  border-top-color: var(--cambridge-gold);
+}
+
+.sl-card--wide {
+  grid-column: 1 / -1;
+}
+
+.sl-process {
+  padding-inline: clamp(1.5rem, 4vw, 3rem);
+  background: var(--cambridge-pale);
+  border-radius: 0.85rem;
+}
+
+.sl-process ol {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sl-process li {
+  padding-top: 1rem;
+  border-top: 3px solid var(--cambridge-dark-teal);
+}
+
+.sl-process li > span,
+.sl-process li > strong {
+  display: block;
+}
+
+.sl-process li > span {
+  color: var(--cambridge-dark-teal);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+}
+
+.sl-process li > strong {
+  margin-top: 0.45rem;
+  color: var(--cambridge-deep-blue);
+  font-family: var(--cambridge-serif);
+  font-size: 1.25rem;
+}
+
+.sl-process li > p {
+  margin: 0.35rem 0 0;
+  color: var(--cambridge-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .sl-facts,
+  .sl-card-grid,
+  .sl-process ol {
+    grid-template-columns: 1fr;
+  }
+
+  .sl-card--wide {
+    grid-column: auto;
+  }
+
+  .sl-actions .sl-button {
+    width: 100%;
   }
 }

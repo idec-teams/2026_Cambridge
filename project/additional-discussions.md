@@ -4,8 +4,6 @@ title: Additional Discussions
 permalink: /project/additional-discussions/
 ---
 
-# Additional discussions
-
 ## Property changes observed in both SSB and NEXT tags
 
 ### Instability index

@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 ### Hello from the Cambridge iDEC Team! 
-We are a team of students passionate about using biology to create interesting stuff. Over the course of the project, we will regularly post about our milestones, so watch this space for updates. For inquiries, we are reachable by email.
+We are a group of students interested in engineering biology to explore interesting and novel applications of directed evolution. This wiki space documents our experimental design, methods and results, as well as our raw data and codebase. All data, computing codes, and biological materials related to the project are available upon request.
 
 ### Meet the Team
 

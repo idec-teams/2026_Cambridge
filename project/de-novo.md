@@ -4,8 +4,6 @@ title: De Novo
 permalink: /project/de-novo/
 ---
 
-# De novo: designing disordered tags from sequence motifs
-
 ## Why design a tag without a natural template?
 
 The de novo branch explored whether proposed features of an entropic-bristle tag could be built into new sequences rather than introduced by mutating an existing protein fragment. Unlike NEXT and SSB, this library had no parental sequence. Its design varied peptide length, charge density, charge patterning and the presence of short hydrophobic patches.

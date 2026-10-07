@@ -54,7 +54,7 @@ team:
 
 advisors:
 - name: Jarrod
-  pic: Default_pfp.jpg
+  pic: jarrod-shilts.png
 
 - name: Alanna
   pic: Default_pfp.jpg
@@ -66,11 +66,17 @@ advisors:
   pic: Default_pfp.jpg
 
 - name: Amy
-  pic: Default_pfp.jpg
+  pic: amy-sun.jpeg
 
 - name: Alexander
   pic: Default_pfp.jpg
-  
+
+sponsors:
+- name: Integrated DNA Technologies
+  pic: IDT-Logo.png
+
+- name: New England Biolabs
+  pic: New_NEB_Logo.png
 
 
 author:

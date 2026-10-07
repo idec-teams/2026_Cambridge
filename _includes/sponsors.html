@@ -1,0 +1,12 @@
+<section id="sponsors" class="sponsor-grid" aria-label="Sponsors">
+  {% for sponsor in site.sponsors %}
+    <article class="sponsor-card">
+      <img
+        class="sponsor-logo"
+        src="{{ '/img/sponsors/' | append: sponsor.pic | relative_url }}"
+        alt="{{ sponsor.name }} logo"
+        loading="lazy"
+      >
+    </article>
+  {% endfor %}
+</section>

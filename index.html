@@ -13,7 +13,7 @@ description: "Computational design and experimental selection of intrinsically d
     <p class="ih-intro">Can a flexible protein tag help an enzyme remain functional—or help a cell withstand freezing? We explored these questions by designing sequence libraries, applying selection and tracking which variants became enriched.</p>
     <div class="ih-actions">
       <a class="ih-button ih-button--primary" href="#ih-story">Follow the project <span aria-hidden="true">↓</span></a>
-      <a class="ih-button ih-button--secondary" href="{% link project/report.md %}">Read our report <span aria-hidden="true">↗</span></a>
+      <a class="ih-button ih-button--secondary" href="{{ '/assets/Report.pdf' | relative_url }}">Read our report <span aria-hidden="true">↗</span></a>
     </div>
     <figure class="ih-banner">
       <img src="{{ '/img/logo/banner.png' | relative_url }}" alt="Cambridge iDEC 2026: Darwin, Cambridge architecture and an evolution-inspired protein illustration" fetchpriority="high">
@@ -34,10 +34,9 @@ description: "Computational design and experimental selection of intrinsically d
   </section>
 
   <section class="ih-section ih-section--tint" aria-labelledby="ih-design-title">
-    <div class="ih-section-heading"><p class="ih-eyebrow">02 / The design</p><h2 id="ih-design-title">Start with flexibility. Explore the sequence.</h2></div>
+    <div class="ih-section-heading"><p class="ih-eyebrow">02 / The design</p><h2 id="ih-design-title">Explore the sequence through directed evolution.</h2></div>
     <p class="ih-copy">Intrinsically disordered proteins do not adopt a single stable three-dimensional structure under the conditions in which they are disordered. Their flexibility and sequence composition make them candidates for several protective roles. For solubility tags, one proposed mechanism is an “entropic bristle”: a mobile peptide that can hinder aggregation-promoting contacts around its fusion partner.</p>
     <p class="ih-copy">We combined natural templates with a motif-based de novo design. Computational tools generated amino acid variants and filtered them using descriptors such as hydrophobicity, estimated charge and secondary-structure propensity. Degenerate DNA encoding provided a practical way to synthesise libraries, while also introducing combinations beyond the original filtered catalogue.</p>
-    <p class="ih-small">These descriptors guide library design; they are not direct measurements of solubility or protection.</p>
 
     <div class="ih-tag-grid" aria-label="The four tag design branches">
       <article class="ih-tag"><span class="ih-tag-number">01</span><p class="ih-eyebrow">Natural peptide extension</p><h3>NEXT</h3><p>A 52-residue construct derived from the N-terminal extension of a bacterial carbonic anhydrase. We explored variants of this solubility-tag template through β-lactamase selection.</p><a href="{% link project/next.md %}">Explore the NEXT design <span aria-hidden="true">→</span></a></article>

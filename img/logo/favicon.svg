@@ -1,4 +1,6 @@
-<svg class="site-mark" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="icon-title">
+  <title id="icon-title">Cambridge iDEC: protein with a disordered tag</title>
+  <!-- Deep-blue background; white protein motif; cyan fusion tag. -->
   <rect width="64" height="64" rx="14" fill="#082F49"/>
   <path d="M36 39C31 48 17 45 16 35C15 27 24 23 30 27C37 32 31 39 25 36C18 33 20 20 29 19C37 18 43 25 39 32"
         fill="none" stroke="#F4F8FB" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>

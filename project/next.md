@@ -4,8 +4,6 @@ title: NEXT
 permalink: /project/next/
 ---
 
-# NEXT: evolving a natural solubility tag
-
 ## Why NEXT?
 
 NEXT was chosen as a starting template for evolving a compact tag that could support the soluble expression of an aggregation-prone enzyme. It originates from the N-terminal extension of α-carbonic anhydrase from *Hydrogenovibrio marinus*. The construct used in this project contains 52 amino acids, encoded by 156 bp.

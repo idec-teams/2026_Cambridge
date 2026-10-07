@@ -1,4 +1,8 @@
-# SSB: evolving a disordered bacterial tail as a fusion tag
+---
+layout: page
+title: SSB
+permalink: /project/ssb/
+---
 
 ## Why the SSB tail?
 
