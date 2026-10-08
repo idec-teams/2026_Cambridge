@@ -388,7 +388,7 @@ For CAHS1, the current analysis illustrates how substantial sequence-level redis
 
 **Worst performing (motif 1 only): RRKRMGKEKGRVRKELAKM**
 
-| **Pace--Scholtz sum** | **Pace--Scholtz mean** | **Hydrophobic moment** | **Helical face occupancy** | **Salt bridge count** | **# Proline** | **# Glycine** | **Helix breaker flag** |
+| **Pace--Scholtz sum** | **Pace--Scholtz mean** | **Hydrophobic moment** | **Helical face occupancy** | **Salt bridge count** | **Number of Proline** | **Number of Glycine** | **Helix breaker flag** |
 |---:|---:|---:|---:|---:|---:|---:|---|
 | 6.45 | 0.339 | 0.304 | 0.429 | 4 | 0 | 2 | True |
 

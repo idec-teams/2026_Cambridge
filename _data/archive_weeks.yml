@@ -47,7 +47,8 @@
 - title: Week 7
   content: |
     - Started liquid batch selection method using carbenicillin for De novo, SSB and NEXT tags
-    - Decided antibiotic concentration did not exert enough selection pressure and optimised concentrations of 0, 10000, 15000, 30000 and 40000 ug/ml of carbenicillin were used for streaking plates of cultures.
+    - Decided antibiotic concentration did not exert enough selection pressure and optimised concentrations 
+    - 0, 10000, 15000, 30000 and 40000 ug/ml of carbenicillin were used for streaking plates of cultures.
 
 - title: Week 8
   content: |
