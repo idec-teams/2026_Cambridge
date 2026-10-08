@@ -33,18 +33,25 @@ article_header: false
         <a href="https://docs.google.com/document/d/1FEwASHhnAlgy1Suab2oFv9587LXLqW2zubEIBijFuzQ/edit?usp=drive_link" target="_blank" rel="noopener">Download the lab notebook <span aria-hidden="true">↗</span></a>
       </article>
 
-      <article class="sl-card sl-card--wide">
+      <article class="sl-card">
         <p class="sl-card__eyebrow">Computational pipelines</p>
         <h2>Code</h2>
         <p>View the codebase that powered the project.</p>
         <a href="https://github.com/TKA0329/iDEC_Cambridge_2026" target="_blank" rel="noopener">Visit the codebase <span aria-hidden="true">↗</span></a>
       </article>
 
+      <article class="sl-card">
+        <p class="sl-card__eyebrow">Supplementary information</p>
+        <h2>Supplementary information</h2>
+        <p>Review the extra information and discussion submitted alongside the report.</p>
+        <a href="{{ '/assets/supplementary.pdf' | relative_url }}" >View supplementary information <span aria-hidden="true">↗</span></a>
+      </article>
+
       <article class="sl-card sl-card--wide">
         <p class="sl-card__eyebrow">Underlying evidence</p>
         <h2>Raw data repository</h2>
         <p>Access sequencing data, plate and gel images, and OD<sub>600</sub> measurements collected throughout the project.</p>
-        <a href="https://drive.google.com/drive/folders/19V4cI6kh5rsnPgF-n2rlWSweN-O0Ynz0?usp=drive_link" target="_blank" rel="noopener">Explore the raw data <span aria-hidden="true">↗</span></a>
+        <a href="https://zenodo.org/records/23218054" target="_blank" rel="noopener">Explore the raw data <span aria-hidden="true">↗</span></a>
       </article>
     </div>
   </section>

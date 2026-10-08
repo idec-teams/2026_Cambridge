@@ -82,7 +82,6 @@ Relative frequency was calculated for each SSB-derived variant before and after 
 If 2 or more variants have the same percentage increase, the variant with higher relative frequency before selection was ranked closer to the top, as the percentage increase has more certainty and less relative error due to random sampling.  The overall top enriched variant was found to also come from the most enriched cluster of variants, and this provided internal consistency. 
 
 
-
 ## What we observed
 
 ### Culture response to carbenicillin
