@@ -246,7 +246,7 @@ Worst performing variant (worst_performing): TEARRKRMGKEKGRVRKELAKMHLRDVEFRKDIVE
       I \approx 44\ mM
       $$
 
-    Note: Inorganic phosphate exists primarily as a mixture of dihydrogen phosphate (H₂PO₄⁻) and monohydrogen phosphate (HPO₄²⁻). At physiological pH, a pKa of approximately **7.2** dominates. This is the ideal pKa in the absence of ionic interactions. However, in the presence of KCl, K⁺ is better able to stabilise dihydrogen phosphate. Consequently, the equilibrium shifts towards dihydrogen phosphate and the effective pKa decreases to approximately **6.8**.
+    Note: Inorganic phosphate exists primarily as a mixture of dihydrogen phosphate (H₂PO₄⁻) and monohydrogen phosphate (HPO₄²⁻). At physiological pH, a pKa of approximately **7.2** dominates. This is the ideal pKa in the absence of ionic interactions. However, in the presence of KCl, ionic interactions affect the relative activities of the phosphate species. Consequently, the effective pKa may decrease to approximately 6.8, favouring monohydrogen phosphate.
 
 7. Therefore, the total ionic strength is approximately:
 
