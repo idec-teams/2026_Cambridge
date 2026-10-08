@@ -183,12 +183,16 @@ The NEXT experiment identified a change in sequence composition, enrichment of C
 
 ## Sources and code
 
-- Jo et al. (2022), background evidence for NEXT as a solubility tag; see the project's research-paper collection.
-- Additional citation used in wiki: 
+Byung Hoon Jo (2022). An Intrinsically Disordered Peptide Tag that Confers an Unusual Solubility to Aggregation-Prone Proteins. Applied and environmental microbiology, 88(7). doi:10.1128/aem.00097-22.
+
 Gunaratne, A., Gamage, D.G., Periyannan, G.R. and Russell, T.G. (2019). Applicability of instability index for in vitro protein stability prediction. Protein and Peptide Letters, [online] 26(5), pp.339–347. doi:10.2174/0929866526666190228144219.
+
 Ma, Y., Yang, L., Chen, Y., Chen, M.W., Yu, W. and Dai, Y. (2026). Directed evolution of functional intrinsically disordered proteins. Nature Chemical Biology. [online] doi:10.1038/s41589-025-02128-3.
+
 Muller-Spath, S., Soranno, A., Hirschfeld, V., Hofmann, H., Ruegger, S., Reymond, L., Nettels, D. and Schuler, B. (2010). Charge interactions can dominate the dimensions of intrinsically disordered proteins. Proceedings of the National Academy of Sciences, 107(33), pp.14609–14614. doi:10.1073/pnas.1001743107.
+
 Tang, N.C., Su, J.C., Shmidov, Y., Kelly, G., Deshpande, S., Sirohi, P., Peterson, N. and Chilkoti, A. (2024). Synthetic intrinsically disordered protein fusion tags that enhance protein solubility. Nature Communications, 15(1). doi:10.1038/s41467-024-47519-7.
+
 - Project report and protocol master sheet, NEXT design and selection records.
 - Project sequencing, clustering and error-prone PCR analysis outputs; candidate counts above are from the recorded NEXT-072 table.
 - [Project code repository](https://github.com/TKA0329/iDEC_Cambridge_2026).

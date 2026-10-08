@@ -1,7 +1,6 @@
 <section id="advisors" class="team-grid" aria-label="Advisors">
   {% for member in site.advisors %}
     {% assign member_image = member.pic | default: "Default_pfp.jpg" %}
-    {% assign member_email = member.email | default: site.email %}
     <article class="team-member">
       <img
         src="{{ '/img/comm/' | append: member_image | relative_url }}"
@@ -14,12 +13,25 @@
       {% if member.role %}
         <p>{{ member.role }}</p>
       {% endif %}
-      {% if member.email %}
-        <a
-          class="team-member__email"
-          href="mailto:{{ member_email }}"
-          aria-label="Email {{ member.name }}"
-        >Email</a>
+      {% if member.email or member.linkedin %}
+        <div class="team-member__actions">
+          {% if member.email %}
+            <a
+              class="team-member__button"
+              href="mailto:{{ member.email }}"
+              aria-label="Email {{ member.name }}"
+            ><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
+          {% endif %}
+          {% if member.linkedin %}
+            <a
+              class="team-member__button"
+              href="{{ member.linkedin }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="{{ member.name }} on LinkedIn"
+            ><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+          {% endif %}
+        </div>
       {% endif %}
     </article>
   {% endfor %}

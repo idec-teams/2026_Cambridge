@@ -84,7 +84,8 @@ A repeat should resolve the catalogue-to-oligonucleotide mapping, verify insert 
 
 ## Sources and code
 
-- Tang et al. (2024), artificial-IDP background reading in the project research collection.
+Tang, N.C., Su, J.C., Shmidov, Y., Kelly, G., Deshpande, S., Sirohi, P., Peterson, N. and Chilkoti, A. (2024). Synthetic intrinsically disordered protein fusion tags that enhance protein solubility. Nature Communications, 15(1). doi:10.1038/s41467-024-47519-7.
+
 - Project report and protocol master sheet, motif definitions and generation criteria.
 - Project sample-identity record for the culture labelled de novo.
 - [Project code repository](https://github.com/TKA0329/iDEC_Cambridge_2026).

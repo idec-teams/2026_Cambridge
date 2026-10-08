@@ -36,6 +36,7 @@ team:
   pic: James.jpeg
   course: Year 2 Natural Sciences (Biological)
   email: jy570@cam.ac.uk
+  linkedin: https://www.linkedin.com/in/james-yang-10713b2a6
 
 - name: Yi Feng
   pic: yf.jpeg
@@ -46,11 +47,13 @@ team:
   pic: ka.jpeg  
   course: Year 2 Chemical Engineering and Biotechnology
   email: kat46@cam.ac.uk
+  linkedin: https://www.linkedin.com/in/kean-ann-tan-86276a306/?isSelfProfile=true
 
 - name: Setareh
   pic: setareh.jpeg  
   course: Year 3 Medicine
   email: ss3192@cam.ac.uk
+  linkedin: https://www.linkedin.com/in/setareh-sadeghi-27324833a/
 
 - name: Tomn
   pic: tomn.jpeg
@@ -66,12 +69,14 @@ advisors:
 
 - name: Alanna
   pic: alanna.jpeg
+  linkedin: https://www.linkedin.com/in/alanna-woods1
 
 - name: Chun Ting
   pic: chunting.jpeg
 
 - name: John
-  pic: john.jpg
+  pic: john.png
+  linkedin: https://www.linkedin.com/in/john-wang-93a32832b
 
 - name: Amy
   pic: amy.jpg

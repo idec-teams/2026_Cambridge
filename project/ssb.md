@@ -163,13 +163,24 @@ One biological replicate and finite sequencing depth leave culture bottlenecks, 
 
 ## Sources and code
 
-- SSB background papers cited in the report: Savvides et al. (2004), Tan et al. (2017), Kozlov et al. (2015) and Kinebuchi et al. (1997); see the project's SSB research-paper collection. 
-- Additional citation used in wiki: 
+Savvides, S.N., Raghunathan, S., Fütterer, K., Kozlov, A.G., Lohman, T.M. and Waksman, G. (2004). The C‐terminal domain of full‐length E. coli SSB is disordered even when bound to DNA. Protein Science, 13(7), pp.1942–1947. doi:10.1110/ps.04661904.
+
+Tan, H.Y., Wilczek, L.A., Pottinger, S., Manosas, M., Yu, C., Nguyenduc, T. and Bianco, P.R. (2017). The intrinsically disordered linker of E. coli SSB is critical for the release from single-stranded DNA. Protein science : a publication of the Protein Society, doi:10.1002/pro.3115.
+
+Kozlov, A.G., Weiland, E., Mittal, A., Waldman, V., Antony, E., Fazio, N., Pappu, R.V. and Lohman, T.M. (2015). Intrinsically disordered C-terminal tails of E. coli single-stranded DNA binding protein regulate cooperative binding to single-stranded DNA. Journal of molecular biology, doi:10.1016/j.jmb.2014.12.020.
+
+Kinebuchi, T., Shindo, H., Nagai, H., Shimamoto, N. and Shimizu, M. (1997). Functional Domains of Escherichia coli Single-Stranded DNA Binding Protein As Assessed by Analyses of the Deletion Mutants. Biochemistry, [online] 36(22), pp.6732–6738. doi:10.1021/bi961647s. 
+
 Gunaratne, A., Gamage, D.G., Periyannan, G.R. and Russell, T.G. (2019). Applicability of instability index for in vitro protein stability prediction. Protein and Peptide Letters, [online] 26(5), pp.339–347. doi:10.2174/0929866526666190228144219.
+
 Ma, Y., Yang, L., Chen, Y., Chen, M.W., Yu, W. and Dai, Y. (2026). Directed evolution of functional intrinsically disordered proteins. Nature Chemical Biology. [online] doi:10.1038/s41589-025-02128-3.
+
 Muller-Spath, S., Soranno, A., Hirschfeld, V., Hofmann, H., Ruegger, S., Reymond, L., Nettels, D. and Schuler, B. (2010). Charge interactions can dominate the dimensions of intrinsically disordered proteins. Proceedings of the National Academy of Sciences, 107(33), pp.14609–14614. doi:10.1073/pnas.1001743107.
+
 Santner, A.A., Croy, C.H., Vasanwala, F.H., Uversky, V.N., Van, Y.-Y.J. and Dunker, A.K. (2012). Sweeping away protein aggregation with entropic bristles: Intrinsically disordered protein fusions enhance soluble expression. Biochemistry, [online] 51(37), pp.7250–7262. doi:10.1021/bi300653m.
+
 Tang, N.C., Su, J.C., Shmidov, Y., Kelly, G., Deshpande, S., Sirohi, P., Peterson, N. and Chilkoti, A. (2024). Synthetic intrinsically disordered protein fusion tags that enhance protein solubility. Nature Communications, 15(1). doi:10.1038/s41467-024-47519-7.
+
 - Project report and protocol master sheet, SSB design and selection records.
 - SSB sequencing and property-clustering outputs.
 - [Project code repository](https://github.com/TKA0329/iDEC_Cambridge_2026).

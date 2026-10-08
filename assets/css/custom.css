@@ -464,15 +464,25 @@ code {
   color: var(--cambridge-muted);
 }
 
-.article__content .team-member__email,
-.article__content .team-member__email:link,
-.article__content .team-member__email:visited {
+.team-member__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.article__content .team-member__button,
+.article__content .team-member__button:link,
+.article__content .team-member__button:visited {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 6.5rem;
-  margin-top: auto;
-  padding: 0.55rem 1rem;
+  gap: 0.45rem;
+  min-width: 6rem;
+  padding: 0.55rem 0.85rem;
   color: var(--cambridge-white);
   font-weight: 700;
   line-height: 1.2;
@@ -483,13 +493,8 @@ code {
   transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
 }
 
-.team-member h4 + .team-member__email,
-.team-member p + .team-member__email {
-  margin-top: 1rem;
-}
-
-.article__content .team-member__email:hover,
-.article__content .team-member__email:focus-visible {
+.article__content .team-member__button:hover,
+.article__content .team-member__button:focus-visible {
   color: var(--cambridge-deep-blue);
   background: var(--cambridge-cyan);
   border-color: var(--cambridge-cyan);
