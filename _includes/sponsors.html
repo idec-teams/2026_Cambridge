@@ -1,12 +1,20 @@
 <section id="sponsors" class="sponsor-grid" aria-label="Sponsors">
   {% for sponsor in site.sponsors %}
     <article class="sponsor-card">
-      <img
-        class="sponsor-logo"
-        src="{{ '/img/sponsors/' | append: sponsor.pic | relative_url }}"
-        alt="{{ sponsor.name }} logo"
-        loading="lazy"
+      <a
+        class="sponsor-link"
+        href="{{ sponsor.url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit {{ sponsor.name }} website"
       >
+        <img
+          class="sponsor-logo"
+          src="{{ '/img/sponsors/' | append: sponsor.pic | relative_url }}"
+          alt="{{ sponsor.name }} logo"
+          loading="lazy"
+        >
+      </a>
     </article>
   {% endfor %}
 </section>

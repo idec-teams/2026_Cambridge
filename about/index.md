@@ -13,9 +13,13 @@ We are a group of students interested in engineering biology to explore interest
 
 ### Our advisors
 
+Many thanks to our principal investigator Jarrod Shilts for his scientific supervision and guidance, as well as our advisors for their scientific advice and help with day to day activities in the lab.
+
 {% include advisors.html %}
 
 ### Our Sponsors
+
+A huge thanks to our sponsors for the financial and material support as well as technical advice that made this project possible.
 
 {% include sponsors.html %}
 

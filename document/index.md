@@ -37,7 +37,7 @@ article_header: false
         <p class="sl-card__eyebrow">Computational pipelines</p>
         <h2>Code</h2>
         <p>View the codebase that powered the project.</p>
-        <a href="https://github.com/TKA0329/iDEC_Cambridge_2026" target="_blank" rel="noopener">Visit the codebase<span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/TKA0329/iDEC_Cambridge_2026" target="_blank" rel="noopener">Visit the codebase <span aria-hidden="true">↗</span></a>
       </article>
 
       <article class="sl-card sl-card--wide">

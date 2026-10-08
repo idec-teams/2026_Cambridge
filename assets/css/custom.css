@@ -396,22 +396,70 @@ code {
 
 /* Team cards */
 .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: clamp(1.25rem, 3vw, 2rem);
+  margin: 1.5rem 0 2rem;
 }
 
 .team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1.25rem;
+  text-align: center;
   background: var(--cambridge-pale);
   border: 1px solid var(--cambridge-rule);
   border-radius: 0.75rem;
 }
 
+.team-member img {
+  width: min(100%, 180px);
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .team-member h4 {
+  margin: 0.75rem 0 0.25rem;
   color: var(--cambridge-deep-blue);
 }
 
 .team-member p {
+  margin: 0;
   color: var(--cambridge-muted);
+}
+
+.article__content .team-member__email,
+.article__content .team-member__email:link,
+.article__content .team-member__email:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 6.5rem;
+  margin-top: auto;
+  padding: 0.55rem 1rem;
+  color: var(--cambridge-white);
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  background: var(--cambridge-deep-blue);
+  border: 2px solid var(--cambridge-deep-blue);
+  border-radius: 999px;
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+.team-member h4 + .team-member__email,
+.team-member p + .team-member__email {
+  margin-top: 1rem;
+}
+
+.article__content .team-member__email:hover,
+.article__content .team-member__email:focus-visible {
+  color: var(--cambridge-deep-blue);
+  background: var(--cambridge-cyan);
+  border-color: var(--cambridge-cyan);
 }
 
 /* Sponsor logos use their natural aspect ratios rather than the circular
@@ -426,12 +474,32 @@ code {
 .sponsor-card {
   display: grid;
   min-height: 10rem;
-  padding: clamp(1.5rem, 4vw, 2.5rem);
   place-items: center;
   background: var(--cambridge-white);
   border: 1px solid var(--cambridge-rule);
   border-radius: 0.75rem;
   box-shadow: 0 8px 28px rgb(8 47 73 / 7%);
+}
+
+.sponsor-link {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  place-items: center;
+  border-radius: inherit;
+  transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.sponsor-link:hover {
+  background: var(--cambridge-pale);
+  box-shadow: 0 12px 30px rgb(8 47 73 / 12%);
+  transform: translateY(-2px);
+}
+
+.sponsor-link:focus-visible {
+  outline: 3px solid var(--cambridge-cyan);
+  outline-offset: 3px;
 }
 
 .sponsor-logo {

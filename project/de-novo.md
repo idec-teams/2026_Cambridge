@@ -64,8 +64,6 @@ VRSVRSVASVASVRSVRSVRSRRSVASVRSVNWVDWVRSVRSVRSVRSVRSVVSVASVRSVNWVNWVRSVRSVRSVRSVR
 
 The reported theoretical encoding space was 6.18 × 10⁵⁰ sequences. An estimated 4.94% met the computational criteria, corresponding to approximately 3.05 × 10⁴⁸ sequences. This enormous space could not be represented comprehensively by the physical library. It describes possible encoding combinations, not measured transformant diversity or a count of functional variants.
 
-> **Design detail to verify:** the copied report describes compression using parental residues and mutation hotspots. That procedure cannot be transferred directly to a library with no parent. The documentation should specify how the variable-length motif catalogue was reduced to this particular synthesised sequence, including which length or subset it represents. Until clarified, we report the recorded sequence and estimates without attributing a template-based hotspot procedure to it.
-
 ## Intended experimental test
 
 The intended de novo construct fused the tag to the C-terminus of L76N TEM-1 β-lactamase through a `GGGGSGGGGS` linker under the pBAD promoter, preserving the enzyme's N-terminal secretion signal. The degenerate oligonucleotide was intended for double-stranded conversion, Gibson assembly and transformation into DH10β cells using the β-lactamase fusion workflow.

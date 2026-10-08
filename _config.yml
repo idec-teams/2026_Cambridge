@@ -35,48 +35,59 @@ team:
 - name: James
   pic: Default_pfp.jpg
   course: Year 2 Natural Sciences (Biological)
+  email: jy570@cam.ac.uk
 
 - name: Yi Feng
   pic: Default_pfp.jpg
   course: Year 2 Natural Sciences (Biological)
+  email: yfl32@cam.ac.uk
 
 - name: Kean Ann
   pic: Default_pfp.jpg  
   course: Year 2 Chemical Engineering and Biotechnology
+  email: kat46@cam.ac.uk
 
 - name: Setareh
   pic: Default_pfp.jpg  
   course: Year 3 Medicine
+  email: ss3192@cam.ac.uk
 
 - name: Tomn
   pic: Default_pfp.jpg
   course: Year 2 Natural Sciences (Biological)
+  email: cw978@cam.ac.uk
 
 advisors:
 - name: Jarrod
   pic: jarrod-shilts.png
+  email: Jarrod.shilts@gmail.com
+
+- name: Gabriele
+  pic: Default_pfp.jpg
 
 - name: Alanna
   pic: Default_pfp.jpg
 
 - name: Chun Ting
-  pic: Default_pfp.jpg
+  pic: chunting.jpeg
 
 - name: John
   pic: Default_pfp.jpg
 
 - name: Amy
-  pic: amy-sun.jpeg
+  pic: amy.jpg
 
 - name: Alexander
-  pic: Default_pfp.jpg
+  pic: alex.jpeg
 
 sponsors:
 - name: Integrated DNA Technologies
   pic: IDT-Logo.png
+  url: https://eu.idtdna.com/page
 
 - name: New England Biolabs
   pic: New_NEB_Logo.png
+  url: https://www.neb.com/en-gb
 
 
 author:

@@ -37,7 +37,7 @@ article_header: false
       <article class="sl-card">
         <p class="sl-card__eyebrow">02 · Methods</p>
         <h2>Additional methods</h2>
-        <p>Review supporting approaches, troubleshooting and methods that sit outside the final competition report.</p>
+        <p>Review supporting approaches and troubleshooting that sit outside the final competition report.</p>
         <a href="{% link project/additional-methods.md %}">Read the additional methods <span aria-hidden="true">→</span></a>
       </article>
 
