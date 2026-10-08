@@ -7,9 +7,9 @@ permalink: /project/solubility_assay/
 ### Conceptualization  
 Our validation assays must use a more direct proxy to validate the performance of the tag. Thus, we elected to do densitometric analysis of the relative protein amounts based on literature review. 
 
-Monoclonal variants that have undergone selection would have been cloned into plasmids with pre-selected host proteins. This would be done along the original variant. These plasmids would then be transformed into BL21 E coli. These are then cultured and induced to produce these protein fusions, alongside untagged hosts.
+Monoclonal variants that have undergone selection would have been cloned into plasmids with pre-selected host proteins. This would be done along the original variant. These plasmids would then be transformed into BL21 E. coli. These are then cultured and induced to produce these protein fusions, alongside untagged hosts.
 
-The three host proteins chosen were based on the relative ease of performing the functional assay, size, and degree of aggregation detailed in \[link to host protein\]
+The three host proteins chosen were based on the relative ease of performing the functional assay, size, and degree of aggregation.
 
 ### Solubility Assay  
 The solubility assay was originally intended to load whole lysate, soluble fraction of lysate and insoluble fraction of lysate onto SDS-Page gels and perform densitometric analysis to quantify relative amounts of proteins in each band. 

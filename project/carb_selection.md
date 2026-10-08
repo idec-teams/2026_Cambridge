@@ -5,7 +5,7 @@ permalink: /project/carb_selection/
 ---
 
 ## Conceptualization  
-Our EB tags theoretically function by disrupting the interaction between the host protein and other molecules which may hinder its function. A mutant beta-lactamase protein was identified to form aggregation prone intermediates which lowers the minimum inhibitory concentration for e coli transformed with this gene. This aggregation is caused by a point mutation that causes the protein to aggregate through hydrophobic interactions with other mutants.
+Our EB tags theoretically function by disrupting the interaction between the host protein and other molecules which may hinder its function. A mutant beta-lactamase protein was identified to form aggregation prone intermediates which lowers the minimum inhibitory concentration for E. coli transformed with this gene. This aggregation is caused by a point mutation that causes the protein to aggregate through hydrophobic interactions with other mutants.
 
 Thus, a tag could be added to the mutant beta-lactamase such that they disrupt this interaction thus increasing the solubility of the beta lactamase. This would increase the minimum inhibitory concentration making the differentiation between different tags viable via altering the carbenicillin concentration.
 
@@ -31,9 +31,9 @@ Carbenicillin plates of various concentrations would have been prepared, and sam
 This selection method would have also not been feasible budgetarily due to the concentrations of plates required to distinguish variants.
 
 ### Carbenicillin Concentrations: Limitations  
-Carbenicillin exists in different mediums in both selection methods. In liquid batch selection, it is freely moving whilst in plate selection, it is fixed to a region in a gel. A limitation of the liquid batch selection is that due to carbenicillin being free moving, the global concentration of carbenicillin is dropping due to breakdown from variants. This means that many weak variants can survive as they are all cumulatively breaking down carbenicillin which leads to a weaker selection pressure. This problem is not encountered in plates as carbenicillin acts on the E coli grown in its respective region, meaning that only local carbenicillin decreases, minimizing the effect. 
+Carbenicillin exists in different mediums in both selection methods. In liquid batch selection, it is freely moving whilst in plate selection, it is fixed to a region in a gel. A limitation of the liquid batch selection is that due to carbenicillin being free moving, the global concentration of carbenicillin is dropping due to breakdown from variants. This means that many weak variants can survive as they are all cumulatively breaking down carbenicillin which leads to a weaker selection pressure. This problem is not encountered in plates as carbenicillin acts on the E. coli grown in its respective region, meaning that only local carbenicillin decreases, minimizing the effect. 
 
-We posited that this effect is not significant. Even though global carbenicillin concentrations are lower than initial, the varying concentrations are still high enough to exert a differential selection pressure across batches. Furthermore, dead cells in the liquid batch selection do not contribute to the degradation rate as the beta lactamase is being degraded constantly, thus only active living E coli can contribute to the degradation, limiting this effect further.
+We posited that this effect is not significant. Even though global carbenicillin concentrations are lower than initial, the varying concentrations are still high enough to exert a differential selection pressure across batches. Furthermore, dead cells in the liquid batch selection do not contribute to the degradation rate as the beta lactamase is being degraded constantly, thus only active living E. coli can contribute to the degradation, limiting this effect further.
 
 ## Library Selection  
 A library of tags would be assembled via Gibson assembly to form our tag-host protein plasmid to be transformed. This means that a population would contain a range of high and low performing variants. Carbenicillin concentrations would then be able to remove a higher proportion of lower performance variants.
@@ -46,7 +46,7 @@ The carbenicillin selection system can also be used as a benchmark for tag perfo
 
 ## Expected Trends  
 Based on the bactericidal action of carbenicillin, the OD600 readings are expected to drop, with a steeper decrease based on higher concentration of carbenicillin at the same time. After the carbenicillin has fully acted on the population, the surviving population will begin to divide and recover. Before saturation is hit, the populations at the same time point will be lower for higher concentrations of carbenicillin action. Lastly, saturation will inform the presence of survivors.  
-It is not known whether a decrease will be seen as the doubling rate of E coli may be higher than the decay of the population. Thus, either trend will be indicative of whether selection works.
+It is not known whether a decrease will be seen as the doubling rate of E. coli may be higher than the decay of the population. Thus, either trend will be indicative of whether selection works.
 
 Furthermore, it is not known if a significant difference will be observed. Thus, sequencing will still proceed regardless of OD data.
 
@@ -58,7 +58,7 @@ Furthermore, both destructive and non-destructive sampling were performed to tes
 ### Results: Pilot Experiment  
 It was found that the mutant beta lactamase had no significant difference between the different concentrations whereas the pBAD had not grown in the presence of any concentration of carbenicillin. 
 
-This indicates that carbenicillin is acting on the population, as shown by the pBAD not growing, however, the non-difference of the mutant beta lactamase not showing any difference could be due to a few factors. The first was that our mutant beta-lactamase that we obtained from literature was not aggregation prone. The second was that carbenicillin took a longer time to act on the E coli with any form of resistance gene. The third was that the reported MIC of both beta lactamases were not accurate. 
+This indicates that carbenicillin is acting on the population, as shown by the pBAD not growing, however, the non-difference of the mutant beta lactamase not showing any difference could be due to a few factors. The first was that our mutant beta-lactamase that we obtained from literature was not aggregation prone. The second was that carbenicillin took a longer time to act on the E. coli with any form of resistance gene. The third was that the reported MIC of both beta lactamases were not accurate. 
 
 The first reason was probed by looking at sequencing data to confirm our construct matches the reported literature gene. Thus, if it were indeed that the reported variant is not aggregation prone, no work could be done to mitigate this. Thus, work was done to mitigate the other factors.
 

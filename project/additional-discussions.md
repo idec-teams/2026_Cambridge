@@ -15,7 +15,7 @@ Our interpretation of the population changes in SSB and NEXT post selection.
 
 <article class="resource-link-card" markdown="1">
 
-## [Error-prone PCR]({% link project/eppcr-methodology.md %})
+## [Error-prone PCR]({% link project/eppcr-discussions.md %})
 Our thoughts on the epPCR work: why it failed, and what this means going forward.
 </article>
 
