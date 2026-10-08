@@ -1,20 +1,20 @@
 ---
 layout: page
 title: Tardigrade P. richtersi CAHS
-permalink: /project/cahs/
+permalink: /project/cahs-backup/
 mathjax: true
 ---
 
 
 ## Why CAHS?
 
-The cytosolic-abundant heat soluble protein (CAHS) from the tardigrade *P. richtersi* is another intrinsically disordered protein that prevents protein aggregation and retains protein functions under desiccation or freeze-thaw conditions. However, instead of employing the entropic bristle mechanism, the CAHS has a core region (residues 121-183) that associates with client proteins to block client proteins from aggregating with each other. Within the core region, motif 1 (residues 124-142) is the most critical for preventing client protein aggregation (Kang et al., 2024). Hence, the CAHS core region was selected as a solubilising protein (instead of a tag covalently linked to a client protein) for directed evolution, with an emphasis on motif 1, to further enhance its performance in preventing protein aggregation.
+The cytosolic-abundant heat soluble protein (CAHS) from the tardigrade *P. richtersi* is another intrinsically disordered protein that prevents protein aggregation and retains protein functions when cytosolic proteins are effectively very concentrated under desiccation or freeze-thaw conditions. However, instead of employing the entropic bristle mechanism, the CAHS has a core region (residues 121-183) that associates with client proteins to block client proteins from aggregating with each other (Kang et al., 2024). Within the core region, motif 1 (residues 124-142) is most critical for preventing client protein aggregation (Kang et al., 2024). Hence, the CAHS core region was selected as a solubilising protein (instead of a tag covalently linked to client protein) for directed evolution, with an emphasis on motif 1, to further enhance its performance in preventing protein aggregation.
 
 ## How we built the CAHS Library
 
 ### Amino acid mutagenesis and filtering
 
-For intrinsically disordered CAHS Core, it was documented that it prevents client protein-protein aggregation by adopting an amphiphilic α-helical conformation in motif 1 to protect aggregation-prone client protein such as lactate dehydrogenase(LDH) (Kang et al., 2024). Within the CAHS Core region, motif 1 (residues 124-142) has been identified as the most critical for this purpose. We therefore restricted mutagenesis to motif 1 and kept the remainder of the core region constant. The mechanisms by which the other regions contribute to the overall function are not well understood, so rational or randomised mutation there would be difficult to come up with and would risk disrupting activity without a clear basis for doing so. In doing so, this also concentrated the library's diversity on the region most likely to influence performance.
+For intrinsically disordered CAHS Core, it was documented that it prevents client protein-protein aggregation by adopting an amphiphilic α-helical conformation in motif 1 to associate with and protect aggregation-prone client protein such as lactate dehydrogenase(LDH) (Kang et al., 2024). Within the CAHS Core region, motif 1 (residues 124-142) has been identified as the most critical for this purpose. We therefore restricted mutagenesis to motif 1 and kept the remainder of the core region constant. The mechanisms by which the other regions contribute to the overall function are not well understood, so rational or randomised mutation there would be difficult to come up with and would risk disrupting activity without a clear basis for doing so. In doing so, this also concentrated the library's diversity on the region most likely to influence performance.
 
 ```text
 CAHS1 Core (121--183): TEA[YRKQQEVEADKIRKELEKQ]HLRDVEFRKDIVEMAIENQKKMIDVESRYAKKDMDRERVKV
@@ -89,11 +89,9 @@ The degenerate CAHS Core IDP was split into two DNA fragments for synthesis: fra
 | Extension | 72 | 7 | --- |
 | Preservation | 4 | --- | 1 |
 
-The molar ratio of the 3 components was 1:5:5. Linear-pBAD-no-sfGFP and fragment 2 were first incubated together for 30 minutes at 50 ℃, then fragment 1 was added and incubated further for 30 minutes. The product plasmid is the same as Figure 2, where CAHS1 becomes the degenerate CAHS IDP. 
+The molar ratio of the 3 components was 1:5:5. Linear-pBAD-no-sfGFP and fragment 2 were first incubated together for 30 minutes at 50 ℃, then fragment motif 1 was added and incubated further for 30 minutes. The product plasmid is the same as Figure 3-4, where CAHS1 becomes the degenerate CAHS IDP. Alternative method of Gibson assembly was later developed using NEBuilder® HiFi DNA Assembly Master Mix (E2621S), where dsDNA linear-pBAD-no-sfGFP , ssDNA fragment motif 1 and dsDNA fragment 2 were added together in molar ratio 1:200:5 and incubated for 60 minutes at 50 ℃. Product plasmid was still the same as in Figure 3-4.
 
-An alternative method of Gibson assembly was later developed using NEBuilder® HiFi DNA Assembly Master Mix (E2621S), where dsDNA linear-pBAD-no-sfGFP, ssDNA fragment motif 1 and dsDNA fragment 2 were added together in molar ratio 1:200:5 and incubated for 60 minutes at 50 ℃. The product plasmid was still the same as in Figure 2.
-
-**Figure 2.** Map of annotated plasmid transformed into E coli for selection on CAHS Core IDP.
+**Figure 2.** Map of annotated plasmid transformed into E coli for selection on CAHS IDP.
 
 ![CAHS expression plasmid map]({{ '/assets/images/cahs/image10.png' | relative_url }})
 
@@ -118,15 +116,15 @@ Originally, desiccation was our primary stress condition to test the effect of C
 
 2.  After 30 minutes, the discs were then submerged in 5 ml LB Broth in a falcon tube. The tube was vortexed for 30 seconds to elute the cells off the filter. This was then plated. The experiment was repeated 3 times. Nevertheless, no colonies were observed the next day.
 
-We hypothesised that it is because the bacteria were embedded in the filter paper and vigorous vortexing is unable to elute the cells off the paper. Filter papers in general have a pore size of approximately 11 µm, which is big compared to the size of a bacterial cell. When the suspension is applied and dried, the cells can migrate deep into the inner fibrous depths of the cellulose network and interact with the cellulose via a series of intermolecular interactions. Vortexing might not be able to flush the fluid completely out from the deep internal capillary pores. This hypothesis is untested. We then decided to explore other alternatives, like using a lyophilizer or other viable instruments, but these equipment is not readily accessible within the lab.
+3.  We hypothesised that it is because the bacteria were embedded in the filter paper and vigorous vortexing is unable to elute the cells off the paper. Filter papers in general have a pore size of approximately 11 µm, which is big compared to the size of a bacterial cell. When the suspension is applied and dried, the cells can migrate deep into the inner fibrous depths of the cellulose network and interact with the cellulose via a series of intermolecular interactions. Vortexing might not be able to flush the fluid completely out from the deep internal capillary pores. This hypothesis is untested. We then decided to explore other alternatives, like using a lyophilizer or other viable instruments, but these equipment is not readily accessible within the lab.
 
 ### Excluding contaminating pBAD colonies
 
 To distinguish putative library-containing colonies from an empty-vector background, cell suspensions were plated on agar supplemented with tetracycline and L-arabinose. The empty pBAD vector retained an arabinose-inducible sfGFP reporter, enabling colonies carrying this vector to be identified by fluorescence under UV illumination. Fluorescent colonies were excluded from colony counts used to assess the survival of the CAHS library. Non-fluorescent colonies were counted as putative insert-containing colonies; insert identity was not confirmed by colony PCR.
 
-## CALVADOS
+### CALVADOS
 
-To check that the selected variants had not gained a tendency to self-associate, we ran a coarse-grained CALVADOS simulation modelled loosely on the aggregation experiments of Kang et al., which measured the turbidity of CAHS Full, ΔCore and Core under varying protein concentrations and found that Full and ΔCore aggregated while Core did not. We simulated the same three constructs alongside a negative control (randomly reshuffled CAHS Core), our winner variant and worst performing variant in similar conditions (outlined below). Kang et al.'s result served as a positive-control benchmark: if the simulations reproduced the Full > ΔCore > Core ordering in terms of their aggregation-prone nature, with Full being the most aggregation-prone and Core being the least, they could be trusted to flag an aggregation-prone variant. This is a sanity check on intrinsic self-association and not a replacement for the LDH protection assay.
+To check that the selected variants had not gained a tendency to self-associate, we ran a coarse-grained CALVADOS simulation modelled loosely on the aggregation experiments of Kang et al., which measured the turbidity of CAHS Full, ΔCore and Core under varying protein concentrations and found that Full and ΔCore aggregated while Core did not. We simulated the same three constructs alongside a negative control (randomly reshuffled CAHS Core), our top variant and worst performing variant in similar conditions (outlined below). Kang et al's result served as a positive-control benchmark: if the simulations reproduced the Full > ΔCore > Core ordering in terms of their aggregation-prone nature, with Full being the most aggregation-prone and Core being the least, they could be trusted to flag an aggregation-prone variant. This is a sanity check on intrinsic self-association and not a replacement for the LDH protection assay.
 
 Sequences used in the simulation:
 
@@ -148,7 +146,7 @@ Winner variant (candidate_01): TEAIRRQMRRAKGRIRKEMTKMHLRDVEFRKDIVEMAIENQKKMIDVES
 Worst performing variant (worst_performing): TEARRKRMGKEKGRVRKELAKMHLRDVEFRKDIVEMAIENQKKMIDVESRYAKKDMDRERVKV
 ```
 
-**Conditions used in [Kang et al, 2024](https://onlinelibrary.wiley.com/doi/10.1002/pro.4913#pro4913-fig-0003)**
+Conditions used in [Kang et al, 2024](https://onlinelibrary.wiley.com/doi/10.1002/pro.4913#pro4913-fig-0003)
 
 1.  20 mM potassium phosphate
 
@@ -160,9 +158,11 @@ Worst performing variant (worst_performing): TEARRKRMGKEKGRVRKELAKMHLRDVEFRKDIVE
 
 5.  Protein concentration = 100 microM, 4% (v/v) PEG-8000
 
-**To mirror these conditions, the parameters used for the simulation are as follows:**
+To mirror these conditions, the parameters used for the simulation are as follows:
 
-#### Ionic Strength (`IONIC_M`): 0.09 M
+#### Ionic Strength
+
+`IONIC_M`: **0.09 M**
 
 1. Ionic strength is:
 
@@ -198,13 +198,13 @@ $x = \frac{1}{1 + 10^{(pK_{a2} - pH)}}$
 
 At pH 7:
 
-- pKa₂ = 7.2:
+- **pKa₂ = 7.2:**
 
 $10^{0.2} \approx 1.58$
 
 $x = \frac{1}{2.58} \approx 0.39$
 
-- pKa₂ = 6.8:
+- **pKa₂ = 6.8:**
 
 $10^{- 0.2} \approx 0.63$
 
@@ -360,7 +360,7 @@ For CAHS1, the current analysis illustrates how substantial sequence-level redis
 
 | **Pace--Scholtz sum** | **Pace--Scholtz mean** | **Hydrophobic moment** | **Helical face occupancy** | **Salt bridge count** | **# Proline** | **# Glycine** | **Helix breaker flag** |
 |---:|---:|---:|---:|---:|---:|---:|---|
-| 6.45 | 0.339 | 0.304 | 0.429 | 4 | 0 | 2 | True |
+| **6.45** | **0.339** | **0.304** | **0.429** | **4** | **0** | **2** | **True** |
 
 #### **Decrease in salt bridge count**
 
@@ -374,11 +374,11 @@ Schematic representation of salt bridge count:
 >
 > ---[ i ]--- (e.g., Glutamate - negative charge)
 >
->      |
+> |
 >
 > (Salt Bridge)
 >
->      |
+> |
 >
 > ---[ i+3 ]--- (e.g., Lysine - positive charge)
 
@@ -392,17 +392,17 @@ These results suggest that this allows for greater flexibility or fewer charge-m
 
 From the scores between the winner variant and the worst performing variant, alongside the result from the analysis of the sequencing data, it can be seen that there is a:
 
-    1.  Increase in face occupancy
+1.  Increase in face occupancy
 
-    2.  Increase in hydrophobic moment
+2.  Increase in hydrophobic moment
 
-    3.  Decrease in Pace-Scholtz sums and means
+3.  Decrease in Pace-Scholtz sums and means
 
 This suggests that selection favoured variants with hydrophobic residues more concentrated on one face with a stronger amphipathic helical character.
 
 This is consistent with Kang et al's observations of CAHS1 motif 1 being an amphipathic alpha-helix (Kang et al, 2024).
 
-As to why this is important in protecting E.coli from freeze-thaw, we hypothesise that it is because an amphipathic helix can protect membranes during freezing. From [Tolleter et al., 2010](https://www.sciencedirect.com/science/article/pii/S0005273610002348?via%3Dihub), the leakage experiments show that the pea mitochondrial LEA protein LEAM, which also forms an amphipathic alpha helix, stabilises liposomes under both drying-rehydration and freeze-thaw. Protection was greater with mitochondria-mimicking lipid mixtures, particularly those containing cardiolipin, than with pure POPC. The authors proposed that LEAM folds into an amphipathic alpha-helix on drying and interacts electrostatically with phospholipid headgroups, based on spectroscopic data and a structural model. They also suggested that similar interactions can probably occur with phosphatidylethanolamine (PE). E.coli's membrane contains 76 to 77% PE ([Shokri and Larsson, 2004](https://pmc.ncbi.nlm.nih.gov/articles/PMC514524/)). These experiments used liposomes of defined composition, not living cells, and the strongest protection was seen with cardiolipin-rich mitochondrial-like lipid mixtures. E.coli membranes are PE-dominant and contain less cardiolipin, so whether similar protection would occur is untested here.
+As to why this is important in protecting E.coli from freeze-thaw, we hypothesise that it is because an amphipathic helix can protect membranes during freezing. From [Tolleter et al](https://www.sciencedirect.com/science/article/pii/S0005273610002348?via%3Dihub), the leakage experiments show that the pea mitochondrial LEA protein LEAM, which also forms an amphipathic alpha helix, stabilises liposomes under both drying-rehydration and freeze-thaw. Protection was greater with mitochondria-mimicking lipid mixtures, particularly those containing cardiolipin, than with pure POPC. The authors proposed that LEAM folds into an amphipathic alpha-helix on drying and interacts electrostatically with phospholipid headgroups, based on spectroscopic data and a structural model. They also suggested that similar interactions can probably occur with phosphatidylethanolamine (PE). E.coli's membrane contains 76 to 77% PE ([Shokri et al, 2004](https://pmc.ncbi.nlm.nih.gov/articles/PMC514524/)). These experiments used liposomes of defined composition, not living cells, and the strongest protection was seen with cardiolipin-rich mitochondrial-like lipid mixtures. E.coli membranes are PE-dominant and contain less cardiolipin, so whether similar protection would occur is untested here.
 
 **Additional information on hydrophobic moment and helical face occupancy**
 
@@ -438,7 +438,7 @@ shows how compact the variants are
 
 ![Fraction of non-monomeric chains]({{ '/assets/images/cahs/image4.png' | relative_url }})
 
-**Figure 7.** Fraction of non-monomeric chains in the CALVADOS simulations.
+*Fraction of non-monomeric chains in the CALVADOS simulations.*
 
 **Note**:
 
@@ -452,7 +452,7 @@ Worst_performing: the least enriched sequence
 
 Dashed = CAHS Core with motif 1's result
 
-Error bars = block SEM within one run (omitted for non-monomeric fraction; values in the notebook results table:[CALVADOS For CAHS](https://github.com/TKA0329/iDEC_Cambridge_2026))
+Error bars = block SEM
 
 n = 1 run each
 
@@ -473,7 +473,7 @@ In contrast, at mp = 1, only around 17-23% of chains (~4 chains out of 20) form 
 
 ![Contacts per chain]({{ '/assets/images/cahs/panel-09.png' | relative_url }})
 
-**Figure 7.** Contacts per chain in the CALVADOS simulations.
+*Contacts per chain in the CALVADOS simulations.*
 
 As shown in the graph, it can be seen that the contacts per chain for CAHS Full and is the highest, followed by CAHS ΔCore, with the negative control, winning variant, worst performing variant and CAHS Core having the least number of contacts per chain.
 
@@ -483,11 +483,11 @@ This is consistent with the above result that indicates that CAHS Full and CAHS 
 
 ![Largest cluster fraction with at least five contacts]({{ '/assets/images/cahs/panel-10.png' | relative_url }})
 
-**Figure 8.** Largest cluster fraction at the five-contact threshold.*
+*Largest cluster fraction at the five-contact threshold.*
 
 ![Largest cluster fraction with at least one contact]({{ '/assets/images/cahs/panel-11.png' | relative_url }})
 
-**Figure 9.** Largest cluster fraction at the one-contact threshold.
+*Largest cluster fraction at the one-contact threshold.*
 
 The largest cluster fraction is the number of chains out of 20 chains that exists in the largest cluster formed by the chains. As shown in the figures, in the case where the chains are considered connected if they have at least 1 inter-chain residue-residue contact, CAHS Full has the largest cluster fraction of approximately 0.65, which suggests that approximately 13 chains form the largest cluster. CAHS ΔCore, on the other hand, has around 6 chains in the largest cluster. The negative control, winning variant, worst-performing variant and CAHS Core have only around 2 chains in the largest cluster, which indicates that most chains remain monomeric or dimeric at most. This also supports the results above, where CAHS Full chains seem to be loosely connected with one another and self-associate.
 
@@ -499,24 +499,8 @@ These results are therefore consistent with Kang et al's findings, that is, the 
 
 ![Mean radius of gyration]({{ '/assets/images/cahs/panel-12.png' | relative_url }})
 
-**Figure 9.** Mean radius of gyration in the CALVADOS simulations.
+*Mean radius of gyration in the CALVADOS simulations.*
 
 The mean per-chain Rg is around 2.3 to 2.4 nm for all the 63-residue sequences, including the winning variant, and increased with chain length to 3.80 nm for ΔCore and 4.60 nm for Full, consistent with an expanded, disordered ensemble. We hypothesise that this is because the per-chain Rg increases with the chain length, where Rg scales as a power law in the number of residues (Kohn et al., 2004). The evolved variants therefore retain the wild-type-like chain dimensions. Small differences among the Core-length sequences were not interpreted or analysed given the single-run design.
 
-# References
-Bülow, S. von et al. (2025) ‘Software package for simulations using the coarse-grained CALVADOS model’. arXiv. Available at: [https://doi.org/10.48550/arXiv.2504.10408].
-
-Kang, D. et al. (2024) ‘Protective roles of highly conserved motif 1 in tardigrade cytosolic-abundant heat soluble protein in extreme environments’, Protein Science, 33(3), p. e4913. Available at: [https://doi.org/10.1002/pro.4913].
-
-Kohn, J.E. et al. (2004) ‘Random-coil behavior and the dimensions of chemically unfolded proteins’, Proceedings of the National Academy of Sciences of the United States of America, 101(34), pp. 12491–12496. Available at: [https://doi.org/10.1073/pnas.0403643101].
-
-Nick Pace, C. and Martin Scholtz, J. (1998) ‘A Helix Propensity Scale Based on Experimental Studies of Peptides and Proteins’, Biophysical Journal, 75(1), pp. 422–427. Available at: [https://doi.org/10.1016/S0006-3495(98)77529-0].
-
-Shokri, A. and Larsson, G. (2004) ‘Characterisation of the Escherichia coli membrane structure and function during fedbatch cultivation’, Microbial Cell Factories, 3, p. 9. Available at: [https://doi.org/10.1186/1475-2859-3-9].
-
-Sleight, S.C., Wigginton, N.S. and Lenski, R.E. (2006) ‘Increased susceptibility to repeated freeze-thaw cycles in Escherichia coli following long-term evolution in a benign environment’, BMC Evolutionary Biology, 6(1), p. 104. Available at: [https://doi.org/10.1186/1471-2148-6-104].
-
-Tolleter, D., Hincha, D.K. and Macherel, D. (2010) ‘A mitochondrial late embryogenesis abundant protein stabilizes model membranes in the dry state’, Biochimica et Biophysica Acta (BBA) - Biomembranes, 1798(10), pp. 1926–1933. Available at: [https://doi.org/10.1016/j.bbamem.2010.06.029].
-
-Zhang, J. et al. (2025) ‘Rationally designed highly amphipathic antimicrobial peptides demonstrating superior bacterial selectivity relative to the corresponding α-helix peptide’, European Journal of Medicinal Chemistry, 286, p. 117310. Available at: [https://doi.org/10.1016/j.ejmech.2025.117310].
-
+[https://arxiv.org/pdf/2504.10408v1](https://arxiv.org/pdf/2504.10408v1)

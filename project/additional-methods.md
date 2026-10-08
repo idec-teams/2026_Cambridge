@@ -25,13 +25,6 @@ This method was developed for a direct proxy for the solubility improvement conf
 
 <article class="resource-link-card" markdown="1">
 
-### [Functional Assay]({% link project/functional_assay.md %})
-This method was developed as a validation that our tags do not impede function of the host protein.
-
-</article>
-
-<article class="resource-link-card" markdown="1">
-
 ### [Reverse translation tool]({% link project/rev_translation.md %})
 Introduction to our reverse translation tool.
 
