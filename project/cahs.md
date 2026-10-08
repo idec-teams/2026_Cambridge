@@ -114,7 +114,7 @@ Induced cell culture suspensions containing the empty pBAD vector, CAHS Core lib
 #### Side note: Troubleshooting experiment for Desiccation
 Originally, desiccation was our primary stress condition to test the effect of CAHS Core on E.coli's survival in a desiccated state. The protocol for the dry run was as follows:
 
-1.  Sterile Whatman No.1 discs that were 65 mm in diameter were prepared with a hole puncher. 1.5 microL of the normalised cell suspension in saline was then pipetted onto each disc. The discs were then placed in a desiccator that contains desiccant.
+1.  Sterile Whatman No.1 discs that were 6.5 mm in diameter were prepared with a hole puncher. 1.5 µL of the normalised cell suspension in saline was then pipetted onto each disc. The discs were then placed in a desiccator that contains desiccant.
 
 2.  After 30 minutes, the discs were then submerged in 5 ml LB Broth in a falcon tube. The tube was vortexed for 30 seconds to elute the cells off the filter. This was then plated. The experiment was repeated 3 times. Nevertheless, no colonies were observed the next day.
 
@@ -148,7 +148,7 @@ Winner variant (candidate_01): TEAIRRQMRRAKGRIRKEMTKMHLRDVEFRKDIVEMAIENQKKMIDVES
 Worst performing variant (worst_performing): TEARRKRMGKEKGRVRKELAKMHLRDVEFRKDIVEMAIENQKKMIDVESRYAKKDMDRERVKV
 ```
 
-**Conditions used in [Kang et al, 2024](https://onlinelibrary.wiley.com/doi/10.1002/pro.4913#pro4913-fig-0003)**
+**Conditions used in [Kang et al, 2024](https://onlinelibrary.wiley.com/doi/10.1002/pro.4913#pro4913-fig-0003):**
 
 1.  20 mM potassium phosphate
 
@@ -166,69 +166,99 @@ Worst performing variant (worst_performing): TEARRKRMGKEKGRVRKELAKMHLRDVEFRKDIVE
 
 1. Ionic strength is:
 
-$I = \frac{1}{2}\sum_{i} c_{i}z_{i}^{2}$
+    $$
+    I = \frac{1}{2}\sum_{i} c_{i}z_{i}^{2}
+    $$
 
-where the sum is taken over every ion in solution.
+    where the sum is taken over every ion in solution.
 
 2. For the case of KCl at **50 mM**, K⁺ and Cl⁻ are each 0.05 M with $z = 1$, so:
 
-$I = \frac{1}{2}(0.05 + 0.05) = 0.050\ M$
+    $$
+    I = \frac{1}{2}(0.05 + 0.05) = 0.050\ M
+    $$
 
 3. **Phosphate, 20 mM total:** it exists as H₂PO₄⁻ ($z = - 1$) and HPO₄²⁻ ($z = - 2$), with K⁺ balancing the charge.
 
-If $x$ is the HPO₄²⁻ fraction:
+    If $x$ is the HPO₄²⁻ fraction:
 
-$I = 20 + 40x\ mM$
+    $$
+    I = 20 + 40x\ mM
+    $$
 
 4. The Henderson--Hasselbalch equation is:
 
-$pH = pK_{a2} + \log\left( \frac{\lbrack HPO_{4}^{2 -}\rbrack}{\lbrack H_{2}PO_{4}^{-}\rbrack} \right)$
+    $$
+    pH = pK_{a2} + \log\left( \frac{\lbrack HPO_{4}^{2 -}\rbrack}{\lbrack H_{2}PO_{4}^{-}\rbrack} \right)
+    $$
 
 5. If $x$ is the HPO₄²⁻ fraction, then the H₂PO₄⁻ fraction is $(1 - x)$. Therefore:
 
-$\frac{\lbrack HPO_{4}^{2 -}\rbrack}{\lbrack H_{2}PO_{4}^{-}\rbrack} = \frac{x}{1 - x}$
+    $$
+    \frac{\lbrack HPO_{4}^{2 -}\rbrack}{\lbrack H_{2}PO_{4}^{-}\rbrack} = \frac{x}{1 - x}
+    $$
 
-and the Henderson--Hasselbalch equation becomes:
+    and the Henderson--Hasselbalch equation becomes:
 
-$pH = pK_{a2} + \log\left( \frac{x}{1 - x} \right)$
+    $$
+    pH = pK_{a2} + \log\left( \frac{x}{1 - x} \right)
+    $$
 
-Solving for $x$:
+    Solving for $x$:
 
-$x = \frac{1}{1 + 10^{(pK_{a2} - pH)}}$
+    $$
+    x = \frac{1}{1 + 10^{(pK_{a2} - pH)}}
+    $$
 
-At pH 7:
+    At pH 7:
 
-- pKa₂ = 7.2:
+    - pKa₂ = 7.2:
 
-$10^{0.2} \approx 1.58$
+      $$
+      10^{0.2} \approx 1.58
+      $$
 
-$x = \frac{1}{2.58} \approx 0.39$
+      $$
+      x = \frac{1}{2.58} \approx 0.39
+      $$
 
-- pKa₂ = 6.8:
+    - pKa₂ = 6.8:
 
-$10^{- 0.2} \approx 0.63$
+      $$
+      10^{- 0.2} \approx 0.63
+      $$
 
-$x = \frac{1}{1.63} \approx 0.61$
+      $$
+      x = \frac{1}{1.63} \approx 0.61
+      $$
 
 6. Therefore:
 
-- Using the textbook pKa₂ of **7.2**, $x \approx 0.39$, giving:
+    - Using the textbook pKa₂ of **7.2**, $x \approx 0.39$, giving:
 
-$I \approx 36\ mM$
+      $$
+      I \approx 36\ mM
+      $$
 
-- Using the effective pKa₂ at this ionic strength of approximately **6.8**, $x \approx 0.61$, giving:
+    - Using the effective pKa₂ at this ionic strength of approximately **6.8**, $x \approx 0.61$, giving:
 
-$I \approx 44\ mM$
+      $$
+      I \approx 44\ mM
+      $$
 
-Note: Inorganic phosphate exists primarily as a mixture of dihydrogen phosphate (H₂PO₄⁻) and monohydrogen phosphate (HPO₄²⁻). At physiological pH, a pKa of approximately **7.2** dominates. This is the ideal pKa in the absence of ionic interactions. However, in the presence of KCl, K⁺ is better able to stabilise dihydrogen phosphate. Consequently, the equilibrium shifts towards dihydrogen phosphate and the effective pKa decreases to approximately **6.8**.
+    Note: Inorganic phosphate exists primarily as a mixture of dihydrogen phosphate (H₂PO₄⁻) and monohydrogen phosphate (HPO₄²⁻). At physiological pH, a pKa of approximately **7.2** dominates. This is the ideal pKa in the absence of ionic interactions. However, in the presence of KCl, K⁺ is better able to stabilise dihydrogen phosphate. Consequently, the equilibrium shifts towards dihydrogen phosphate and the effective pKa decreases to approximately **6.8**.
 
-10. Therefore, the total ionic strength is approximately:
+7. Therefore, the total ionic strength is approximately:
 
-$0.050 + (0.036–0.044) \approx 0.086–0.094\ M$
+    $$
+    0.050 + (0.036–0.044) \approx 0.086–0.094\ M
+    $$
 
-Taking the middle ground:
+    Taking the middle ground:
 
-$$\boxed{I \approx 0.09\ \text{M}}$$
+    $$
+    \boxed{I \approx 0.09\ \text{M}}
+    $$
 
 Therefore, the background ionic strength of the buffer/salt solution was estimated as **~0.09 M**, excluding the protein contribution.
 
@@ -519,4 +549,3 @@ Sleight, S.C., Wigginton, N.S. and Lenski, R.E. (2006) ‘Increased susceptibili
 Tolleter, D., Hincha, D.K. and Macherel, D. (2010) ‘A mitochondrial late embryogenesis abundant protein stabilizes model membranes in the dry state’, Biochimica et Biophysica Acta (BBA) - Biomembranes, 1798(10), pp. 1926–1933. Available at: [https://doi.org/10.1016/j.bbamem.2010.06.029].
 
 Zhang, J. et al. (2025) ‘Rationally designed highly amphipathic antimicrobial peptides demonstrating superior bacterial selectivity relative to the corresponding α-helix peptide’, European Journal of Medicinal Chemistry, 286, p. 117310. Available at: [https://doi.org/10.1016/j.ejmech.2025.117310].
-
