@@ -23,7 +23,7 @@ article_header: false
         <p class="sl-card__eyebrow">Methods</p>
         <h2>Protocols</h2>
         <p>Experimental procedures used for cloning, expression, selection and supporting laboratory work.</p>
-        <a href="https://drive.google.com/drive/folders/18CXOJORT9cA6z-OyjulumCpqUur2I3VD?usp=drive_link" target="_blank" rel="noopener">Download protocols <span aria-hidden="true">↗</span></a>
+        <a href="{{ '/assets/protocols.zip' | relative_url }}">Download protocols <span aria-hidden="true">↗</span></a>
       </article>
 
       <article class="sl-card">

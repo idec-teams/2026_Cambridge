@@ -1,32 +1,64 @@
 # Add or remove complete list items to change the number of weeks shown.
 # Leave `content` empty for a reserved timeline slot.
-- title: Week 1
-  content: blah blah
+- title: Project planning and initial work
+  content: |
+    - Selected IDP solubility project
+    - Worked on directed evolution selection method using β-lactamase
+    - Developing and optimising computational programs
+    - Investigated reagents
+    - Discussion of epPCR and selection method
+    - Developed a rough project timeline
+    - Began designing primers
 
 - title: Week 2
-  content: blah blah
+  content: |
+    - Ordered degenerate and library oligos
+    - Determined conditions for epPCR including magnesium and manganese chloride concentrations and choosing taq polymerase enzyme.
 
 - title: Week 3
-  content: blah blah blah
+  content: |
+    - Carried out Mn2+ and Mg2+ ion optimisation experiment for epPCR and checked results with gel electrophoresis.
+    - Conducted a desiccation dry-run for the tardigrade pipeline
+    - Sent out a sample of of epPCR product for sequencing and concluded that the major smearing on gels is due to GC rich content and started using a GC enhancer.
 
 - title: Week 4
-  content:
+  content: |
+    - Carried out epPCR mispriming troubleshoot
+    - Tested how using DMSO or GC enhancer changes the conditions for epPCR
+    - Attempted second linearisation of pBAD but will have to troubleshoot
+    - Tested if lowering primer concentration would decrease smearing in epPCR
 
 - title: Week 5
-  content:
+  content: |
+    - epPCR round 2 worried after optimised conditions
+    - Transformation of Gibson assembly products of De novo, SSB and NEXT tags into DH10β bacteria.
 
 - title: Week 6
-  content:
+  content: |
+    - Started research about target proteins that could be used to test the solubility of our tag product
+    - Researched about potential commercially available tags we could use to benchmark our own tag performance against.
 
 - title: Week 7
-  content:
+  content: |
+    - Started liquid batch selection method using carbenicillin for De novo, SSB and NEXT tags
+    - Decided antibiotic concentration did not exert enough selection pressure and optimised concentrations of 0, 10000, 15000, 30000 and 40000 ug/ml of carbenicillin were used for streaking plates of cultures.
 
 - title: Week 8
-  content:
+  content: |
+    - Carried out gibson assembly for tardigrade library and degenerate oligos.
+    - Carried out freeze-thaw tardigrade dry run using an ice bath made with isopropanol plus dry ice.
+    - Received back sequencing results, what we thought was SSB library is actually NEXT library
 
 - title: Week 9
-  content:
+  content: |
+    - Compiled all gel images in PNG formats
+    - Carried out 6 complete cycles of freeze-thaw selection for the tardigrade pipeline.
+    - Conducted another round of liquid batch selection for the other three tags using liquid batch selection
+    - Started making buffers for SDS PAGE gels.
 
 - title: Week 10
-  content:
+  content: |
+    - Performed plasmid extraction and sent samples form both tardigrade and the other three tags for sequencing and subsequent analysis
+    - Carried out SDS-Page gel for combination of fusion of target protein and tags, which included the combination of hEGF, taCA, and isPETase as target proteins and GB1 and MBP as tags.
+    - Carried out protein purification using buffers and protein His-Tag Spin column.
 
