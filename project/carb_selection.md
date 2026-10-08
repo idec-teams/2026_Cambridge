@@ -5,7 +5,7 @@ permalink: /project/carb_selection/
 ---
 
 ## Conceptualization  
-Our EB tags theoretically function by disrupting the interaction between the host protein and other molecules which may hinder its function. A mutant beta-lactamase protein was identified to form aggregation prone intermediates which lowers the minimum inhibitory concentration for e coli transformed with this gene. This aggregation is caused by a point mutation of (mutation) that causes the protein to aggregate through hydrophobic interactions with other mutants.
+Our EB tags theoretically function by disrupting the interaction between the host protein and other molecules which may hinder its function. A mutant beta-lactamase protein was identified to form aggregation prone intermediates which lowers the minimum inhibitory concentration for e coli transformed with this gene. This aggregation is caused by a point mutation that causes the protein to aggregate through hydrophobic interactions with other mutants.
 
 Thus, a tag could be added to the mutant beta-lactamase such that they disrupt this interaction thus increasing the solubility of the beta lactamase. This would increase the minimum inhibitory concentration making the differentiation between different tags viable via altering the carbenicillin concentration.
 

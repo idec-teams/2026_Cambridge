@@ -30,7 +30,7 @@ article_header: false
         <p class="sl-card__eyebrow">Daily record</p>
         <h2>Lab notebook</h2>
         <p>Follow the team's day-to-day activities, decisions, observations and experimental progress.</p>
-        <a href="https://docs.google.com/document/d/1FEwASHhnAlgy1Suab2oFv9587LXLqW2zubEIBijFuzQ/edit?usp=drive_link" target="_blank" rel="noopener">Download the lab notebook <span aria-hidden="true">↗</span></a>
+        <a href="{{ '/assets/project_diary.pdf' | relative_url }}">Download the lab notebook <span aria-hidden="true">↗</span></a>
       </article>
 
       <article class="sl-card">

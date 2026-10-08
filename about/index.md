@@ -17,6 +17,8 @@ Many thanks to our principal investigator Jarrod Shilts for his scientific super
 
 {% include advisors.html %}
 
+A huge thanks to Siol, Rachel and Nina for all the help with lab activities and infinite patience when our experiment overran.
+
 ### Our Sponsors
 
 A huge thanks to our sponsors for the financial and material support as well as technical advice that made this project possible.
