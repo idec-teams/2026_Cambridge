@@ -22,7 +22,11 @@ CAHS1 Core (121--183): TEA[YRKQQEVEADKIRKELEKQ]HLRDVEFRKDIVEMAIENQKKMIDVESRYAKKD
 Motif 1 (124-142): YRKQQEVEADKIRKELEKQ
 ```
 
-![CAHS core and motif 1 schematic]({{ '/assets/images/cahs/image1.png' | relative_url }})
+<figure class="project-figure project-figure--portrait">
+  <img src="{{ '/assets/images/cahs/image1.png' | relative_url }}"
+       alt="CAHS core and motif 1 schematic"
+       loading="lazy">
+</figure>
 
 **Figure 1.** Schematic representation of where the residues are located, adapted from Kang et al., 2024.
 

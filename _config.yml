@@ -33,40 +33,39 @@ highlight_theme: default
 # Team names, titles and social links
 team:
 - name: James
-  pic: james.jpeg
+  pic: James.jpeg
   course: Year 2 Natural Sciences (Biological)
   email: jy570@cam.ac.uk
 
 - name: Yi Feng
-  pic: Default_pfp.jpg
+  pic: yf.jpeg
   course: Year 2 Natural Sciences (Biological)
   email: yfl32@cam.ac.uk
 
 - name: Kean Ann
-  pic: Default_pfp.jpg  
+  pic: ka.jpeg  
   course: Year 2 Chemical Engineering and Biotechnology
   email: kat46@cam.ac.uk
 
 - name: Setareh
-  pic: Default_pfp.jpg  
+  pic: setareh.jpeg  
   course: Year 3 Medicine
   email: ss3192@cam.ac.uk
 
 - name: Tomn
-  pic: Default_pfp.jpg
+  pic: tomn.jpeg
   course: Year 2 Natural Sciences (Biological)
   email: cw978@cam.ac.uk
 
 advisors:
 - name: Jarrod
   pic: jarrod-shilts.png
-  email: Jarrod.shilts@gmail.com
 
 - name: Gabriele
   pic: Default_pfp.jpg
 
 - name: Alanna
-  pic: Default_pfp.jpg
+  pic: alanna.jpeg
 
 - name: Chun Ting
   pic: chunting.jpeg

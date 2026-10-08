@@ -41,6 +41,12 @@ AGACAAGGAGGAGGAARCCSAGVCRGARGCAACATAGGAGGAGGACAACCACAAGGAGGAAASCRACRACVCCVAMASCS
 Its theoretical encoding space was 995,328 sequences. One caveat was that the degenerate codons recombined to allow residues not present in the selected sequence to enter the encoding space. Nevertheless, approximately 47.3% (470,332 sequences) still met our previous in silico filtering criteria. Also, these figures describe the designed encoding space, and there were loss of variants gibson assembly, plasmid transformation or variant sequencing. 
 
 ### Expression and antibiotic selection
+<figure class="project-figure project-figure--portrait">
+  <img src="{{ '/img/figures/carb_method.jpeg' | relative_url }}"
+       alt="carbenicillin selection workflow"
+       loading="lazy">
+  <figcaption><strong>Figure 2. </strong> Carbenicillin selection mechanism.</figcaption>
+</figure>
 
 The tag was fused to the C-terminus of aggregation-prone L76N TEM-1 β-lactamase through a `GGGGSGGGGS` linker. This configuration preserved the enzyme's N-terminal secretion signal. Expression was controlled by the arabinose-inducible pBAD promoter. Empty pBAD and untagged L76N β-lactamase served as controls for antibiotic susceptibility and tag-independent resistance, respectively.
 
@@ -81,7 +87,7 @@ If 2 or more variants have the same percentage increase, the variant with higher
 
 ### Culture response to carbenicillin
 
-The SSB-derived library reached an endpoint OD₆₀₀ of 0.091 at 10,000 µg/mL carbenicillin after 21 hours. The corresponding [NEXT library](next.md) value was 0.314. This comparison showed that SSB-derived libraries seemed to grow slower under selection pressure. However, this OD₆₀₀ does not measure the solubility enhancement of individual SSB variants.
+The SSB-derived library reached an endpoint OD₆₀₀ of 0.091 at 10,000 µg/mL carbenicillin after 21 hours. The corresponding [NEXT library]({{ '/project/next/' | relative_url }}) value was 0.314. This comparison showed that SSB-derived libraries seemed to grow slower under selection pressure. However, this OD₆₀₀ does not measure the solubility enhancement of individual SSB variants.
 
 <figure class="project-figure">
   <img src="{{ '/img/figures/endpoint.png' | relative_url }}"
