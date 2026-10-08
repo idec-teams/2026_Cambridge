@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Evolving a disordered bacterial protein tail as a fusion tag
+title: Evolving a disordered bacterial protein tail
 permalink: /project/ssb/
 ---
+
 ## Why the SSB tail?
 
 Our SSB construct uses a 42-amino-acid C-terminal fragment of *Escherichia coli* single-stranded DNA-binding protein, encoded by 126 bp. The design focuses on its flexible, extended, and disordered C-terminus region instead of its structured DNA-binding domain, while leaving out the last few C-terminal residues involved in interacting with other proteins.
@@ -68,7 +69,6 @@ For more detailed property analysis, we found our sequencing depth to be very li
 These fixed clusters were used in both samples pre & post-selection. Cluster abundance was the sum of frequency of member variants divided by the sample's total reads. PCA projected the same standardised features onto two axes for display; clustering used the full feature space. A change in a read-weighted cluster centre reflects changes in member abundance, rather than movement of an individual sequence or redefinition of its cluster. All retained sequences, including singletons, contributed to the analysis. 
 
 
-
 ### Selecting current best-performing SSB-derived variant
 
 Relative frequency was calculated for each SSB-derived variant before and after selection, using [variant frequency / total number of effective sequencing reads in the FASTQ file]. The percentage increase [(relative frequency after selection - relative frequency before selection) / relative frequency before selection] was calculated for each SSB-derived variant. Highest percentage increase was taken to mean better solubility-enhancing performance of the variant, so the variant was ranked closer to the top. 
@@ -105,15 +105,14 @@ Third, the instability index showed decrease from before to after selection with
 
 Fourth, the turn fraction decreases significantly from before to after selection (p<0.05). This was not directly within our expectation, and we proposed that for IDPs to better block the aggregation-prone surface of client protein more completely, it needs more extended conformation (Santner et al., 2012) and thus less turn fraction, despite turns being a type of disordered structure. This is also consistent with the increase in radius of gyration after selection (p<0.05). 
 
-Overall, these population property changes provides some certainty that our selection method did favor the more solubility-enhancing SSB-derived variants.
+Overall, these population property changes provides some certainty that our selection method did favor the more solubility-enhancing SSB-derived variants.  
 
 <figure class="project-figure project-figure--portrait">
-  <img src="{{ '/img/figures/ssb_pop_means.png' | relative_url }}"
-       alt="Bar charts comparing count-weighted mean sequence properties of untreated and selected SSB populations"
+  <img src="{{ '/img/figures/ssb_properties_updated.png' | relative_url }}"
+       alt="Count-weighted mean properties of untreated and selected SSB populations"
        loading="lazy">
-  <figcaption><strong>Figure 2.</strong> Count-weighted mean properties of the untreated and selected SSB populations. Whiskers show ± one count-weighted population standard deviation. An asterisk denotes a significant pairwise Mann–Whitney U test after correction at <em>p</em> &lt; 0.05.</figcaption>
+  <figcaption><strong>Figure 2. </strong> The change in six properties of SSB-derived IDP variants before (untreated) and after (selected) selection. * indicates statistical significance with corrected Mann-Whitney U test p value threshold = 0.05. Notice that error bars are plotted as ±1 standard deviation but they are not representative. This is because the property values are non-normally distributed; values take few distinct values; and many variants are tied in property values.</figcaption>
 </figure>
-
 
 ### Enrichment was dominated by SSB-054
 
@@ -156,7 +155,6 @@ SSB-054:RQGGGNRGRSNIGGGQPQGGKRRPQQRQGGNQFSGGRGRRPQ
 The clearest outcome is enrichment of the selected population around SSB-054 and the cluster it belongs to. SSB-054 is a candidate for individual reconstruction and functional testing. The population property shift suggested but not necessarily established better improvement in β-lactamase solubility by our post-selection SSB-derived IDPs. We are also not certain that these SSB-derived IDPs can fully retain enzyme activity, or if the enrichment after selection is highly reproducible. 
 
 One biological replicate and finite sequencing depth leave culture bottlenecks, founder effects and amplification bias unresolved. Replicated assays of SSB-054 alongside parental SSB and untagged β-lactamase would test whether the enrichment reflects a useful fusion-tag phenotype.
-
 
 ## Sources and code
 

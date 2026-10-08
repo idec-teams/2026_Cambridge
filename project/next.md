@@ -58,7 +58,7 @@ Reads were translated and frequency of each NEXT variant was counted. Subsequent
 
 ### Comparing composition and sequence properties
 
-All retained NEXT sequences observed in either culture were combined into one catalogue. A two-row contingency table contained untreated and selected read counts for each sequence, with zero assigned where a sequence was not detected. Pearson's χ² statistic quantified the discrepancy from equal relative composition. Because many expected counts were small, its null distribution was estimated from 100,000 random tables generated with Patefield's algorithm, preserving both sample read totals and pooled counts for each variant. The seed was 42 and the Monte Carlo estimate was $(b + 1) / (100,000 + 1)$, where $b$ counted simulated statistics at least as large as the observed statistic. This tests compatibility with random read allocation under the equal-composition model; it does not correct experimental biases or supply biological replication.
+All retained NEXT sequences observed in either culture were combined into one catalogue. A two-row contingency table contained untreated and selected read counts for each sequence, with zero assigned where a sequence was not detected. Pearson's χ² statistic quantified the discrepancy from equal relative composition. Because many expected counts were small, its null distribution was estimated from 100,000 random tables generated with Patefield's algorithm, preserving both sample read totals and pooled counts for each variant. The seed was 42 and the Monte Carlo estimate was `(b + 1) / (100,000 + 1)`, where `b` counted simulated statistics at least as large as the observed statistic. This tests compatibility with random read allocation under the equal-composition model; it does not correct experimental biases or supply biological replication.
 
 Importantly, we hope to know whether our selection pressure has significantly favored certain properties of NEXT-derived variants compared to our unselected library. For property analysis, each unique NEXT sequence was characterized by eight descriptors: GRAVY, estimated net charge at pH 7, instability index, turn fraction, combined helix- and sheet-associated residue fractions, and IDP-BERT predictions of radius of gyration, heat capacity and end-to-end decorrelation time. Features were standardised once across the pooled catalogue. For each descriptor (property), we performed a non-parametric Mann-Whitney U test by categorising variants into before selection group and after selection group. This test was applied because the descriptors are non-normally distributed; some descriptors take few distinct values; and many variants are tied in descriptor values. 
 
@@ -98,13 +98,14 @@ Second, the instability index showed decrease from before to after selection (p<
 
 Third, the radius of gyration increases after selection with nominal statistical significance (p<0.05). This might allow more aggregation-prone surface of the client protein to be shielded from aggregating into inclusion bodies.
 
-Overall, these population property changes provide some but limited certainty that our selection method did favour the more solubility-enhancing NEXT-derived variants.
+Overall, these population property changes provide some but limited certainty that our selection method did favour the more solubility-enhancing NEXT-derived variants. 
 
+ 
 <figure class="project-figure project-figure--portrait">
-  <img src="{{ '/img/figures/next_pop_means.png' | relative_url }}"
+  <img src="{{ '/img/figures/next_properties_updated.png' | relative_url }}"
        alt="Bar charts comparing count-weighted mean sequence properties of untreated and selected NEXT populations"
        loading="lazy">
-  <figcaption><strong>Figure 2.</strong> Count-weighted mean properties of the untreated and selected NEXT populations. Whiskers show ± one count-weighted population standard deviation. An asterisk denotes a significant pairwise Mann–Whitney U test at <em>p</em> &lt; 0.05.</figcaption>
+  <figcaption><strong>Figure 2. </strong> above shows the change in three properties of NEXT-derived IDP variants before (untreated) and after (selected) selection. * indicates statistical significance with corrected Mann-Whitney U test p value threshold = 0.05. Notice that error bars are plotted as ±1 standard deviation but they are not representative. This is because the property values are non-normally distributed; values take few distinct values; and many variants are tied in property values.</figcaption>
 </figure>
 
 ### A less abundant property group became enriched
@@ -116,7 +117,7 @@ The shared property analysis identified two NEXT clusters. Their contributions t
 | Untreated | 93.9 | 6.1 |
 | Selected | 70.4 | 29.6 |
 
-C2 increased by 23.5 percentage points, or approximately 4.9-fold in relative abundance.
+C2 increased by 23.5 percentage points, or approximately 4.9-fold in relative abundance. 
 
 ### Properties of the enriched cluster (cluster 2)
 
@@ -168,7 +169,7 @@ A separate, unselected NEXT error-prone PCR library was generated through three 
 For visual comparison, the valid error-prone PCR variants were displayed in one colour, with NEXT-072 projected as a labelled reference point using the same feature scaling and PCA transformation fitted to that catalogue. The first two components represented approximately 62% of the feature variance. NEXT-072 lay outside the densest region of this projection and was not detected as an exact sequence in the analysed error-prone PCR dataset.
 
 Since error-prone PCR could not persist over 3-4 rounds in our test due to drastic drop in amplicon yield, this suggests that this selected variant (NEXT-072) has properties that error-prone PCR may not generate and the computational design was indispensable. However, many limitations weaken this claim. For instance, our sequencing coverage was finite, the PCR library was not selected, and the two-dimensional projection omits some feature variation. 
-
+ 
 
 ## What this means for NEXT
 

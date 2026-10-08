@@ -26,14 +26,6 @@ article_header: false
       <h2 id="project-sections-title">Explore the work</h2>
     </div>
 
-    <div class="sl-card-grid">
-      <article class="sl-card">
-        <p class="sl-card__eyebrow">01 · Design</p>
-        <h2>Experimental design</h2>
-        <p>Understand our choice of IDP templates, computational descriptors, library construction and selection strategy.</p>
-        <a href="{% link project/design.md %}">Explore the design <span aria-hidden="true">→</span></a>
-      </article>
-
       <article class="sl-card">
         <p class="sl-card__eyebrow">02 · Methods</p>
         <h2>Additional methods</h2>
