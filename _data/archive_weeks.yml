@@ -1,0 +1,32 @@
+# Add or remove complete list items to change the number of weeks shown.
+# Leave `content` empty for a reserved timeline slot.
+- title: Week 1
+  content: blah blah
+
+- title: Week 2
+  content: blah blah
+
+- title: Week 3
+  content: blah blah blah
+
+- title: Week 4
+  content:
+
+- title: Week 5
+  content:
+
+- title: Week 6
+  content:
+
+- title: Week 7
+  content:
+
+- title: Week 8
+  content:
+
+- title: Week 9
+  content:
+
+- title: Week 10
+  content:
+

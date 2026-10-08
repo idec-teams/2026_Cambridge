@@ -9,8 +9,8 @@ article_header: false
   <section class="sl-hero" aria-labelledby="documents-title">
     <p class="sl-eyebrow">Open project record</p>
     <h1 id="documents-title">Document</h1>
-    <p class="sl-lead">Browse the practical record behind the project—from day-to-day experimental decisions to protocols, sequencing files and assay outputs.</p>
-    <p class="sl-note">These working resources are hosted on Google Drive and open in a new tab.</p>
+    <p class="sl-lead">Browse the raw data behind the project—from day-to-day experimental decisions to protocols, sequencing files and plate images.</p>
+    <p class="sl-note">Repositories are hosted on third party sites and will open in a new window.</p>
   </section>
 
   <section class="sl-section" aria-labelledby="document-resources-title">
@@ -23,14 +23,21 @@ article_header: false
         <p class="sl-card__eyebrow">Methods</p>
         <h2>Protocols</h2>
         <p>Experimental procedures used for cloning, expression, selection and supporting laboratory work.</p>
-        <a href="https://drive.google.com/drive/folders/18CXOJORT9cA6z-OyjulumCpqUur2I3VD?usp=drive_link" target="_blank" rel="noopener">Browse the protocols <span aria-hidden="true">↗</span></a>
+        <a href="https://drive.google.com/drive/folders/18CXOJORT9cA6z-OyjulumCpqUur2I3VD?usp=drive_link" target="_blank" rel="noopener">Download protocols <span aria-hidden="true">↗</span></a>
       </article>
 
       <article class="sl-card">
         <p class="sl-card__eyebrow">Daily record</p>
         <h2>Lab notebook</h2>
         <p>Follow the team's day-to-day activities, decisions, observations and experimental progress.</p>
-        <a href="https://docs.google.com/document/d/1FEwASHhnAlgy1Suab2oFv9587LXLqW2zubEIBijFuzQ/edit?usp=drive_link" target="_blank" rel="noopener">Open the lab notebook <span aria-hidden="true">↗</span></a>
+        <a href="https://docs.google.com/document/d/1FEwASHhnAlgy1Suab2oFv9587LXLqW2zubEIBijFuzQ/edit?usp=drive_link" target="_blank" rel="noopener">Download the lab notebook <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="sl-card sl-card--wide">
+        <p class="sl-card__eyebrow">Computational pipelines</p>
+        <h2>Code</h2>
+        <p>View the codebase that powered the project.</p>
+        <a href="https://github.com/TKA0329/iDEC_Cambridge_2026" target="_blank" rel="noopener">Visit the codebase<span aria-hidden="true">↗</span></a>
       </article>
 
       <article class="sl-card sl-card--wide">
